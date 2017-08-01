@@ -35,7 +35,7 @@ https://github.com/f5devcentral/f5-automation-labs/
 
 -  1 x Windows Jumphost
 
-各コンポーネントのVLAN、IPアドレス、およびID/PASSWORDは以下をお使い下さい。
+各コンポーネントのVLAN、IPアドレス、およびID/PASSWORDは、以下をお使い下さい。
 
 .. list-table::
     :widths: 20 40 40
@@ -44,7 +44,7 @@ https://github.com/f5devcentral/f5-automation-labs/
 
     * - **Component**
       - **VLAN/IP Address(es)**
-      - **Credentials**
+      - **ID/PASSWORD**
     * - Windows Jumphost
       - - **Management:** 10.1.1.250
         - **Internal:** 10.1.10.250
