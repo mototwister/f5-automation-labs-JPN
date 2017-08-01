@@ -9,7 +9,7 @@ F5's Automation, Orchestration and Programmability Trainingへようこそ！
 
 https://github.com/f5devcentral/f5-automation-labs/
 
-バグ修正や新機能追加のリクエストは、このリポジトリの`Issue <https://github.com/f5devcentral/f5-automation-labs/issues>`_を開くことによって行うことができます。
+バグ修正や新機能追加のリクエストは、このリポジトリの `Issue <https://github.com/f5devcentral/f5-automation-labs/issues>`_ を開くことによって行うことができます。
 
 
 はじめに
