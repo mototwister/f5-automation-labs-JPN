@@ -5,28 +5,28 @@
 .. |labname| replace:: Lab\ |labdot|
 .. |labnameund| replace:: Lab\ |labund|
 
-Lab |labmodule|\.\ |labnum| – REST API認証と「example」テンプレートの紹介
+Lab |labmodule|\.\ |labnum| – REST API認証と「example」テンプレート
 ---------------------------------------------------------------------------
 
-REST APIインターフェースとやり取りする際に理解する必要がある基本的な概念の1つは、ユーザーとシステム間の認証方法です。
-BIG-IPとiWorkflowは、2種類の認証をサポートしています: HTTP BASICとToken　based。 ユースケースによっては、APIのユーザーが両方のタイプを使用することが多いため、これらの認証メカニズムの両方を理解することが重要です。
-このラボでは、両方の認証方法について説明します。
+REST APIインターフェースとやり取りする際に、理解する必要がある基本的な概念の1つがユーザーとシステム間の認証方法です。
+BIG-IPとiWorkflowは、HTTP BASICとToken basedの２種類の認証をサポートしています。ユースケースによっては、APIのユーザーは両方の認証を使用することが多いため、これらの認証メカニズムの両方を理解することが重要です。
+このラボでは、これらの認証方法について学習します。
 
 Task 1 - Postmanのコレクションと環境変数をインポートする
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 このラボで使用されるPostmanのコレクションと環境変数をインポートします。
 
-このタスクを完了するには、次の手順を実行します:
+このタスクを完了するには、次の手順を実行します。
 
-#. Windows Jumphostのタスクバーの |image8| アイコンをクリックして、Postmanツールを開きます。
+#. Windows Jumphostのタスクバーの |image8| アイコンをクリックして、Postmanツールを起動します。
 
 
-#. Postman画面の左上にある「Import」ボタンをクリックします。
+#. Postman画面の左上にある[Import]ボタンをクリックします。
 
    |image87|
 
-#. 「Import from Link」タブをクリックします。テキストボックスに次のURLを貼り付けて、「Import」をクリックします。
+#. [Import from Link]タブをクリックします。テキストボックスに次のURLを貼り付けて、[Import]をクリックします。
 
    .. parsed-literal:: 
 
@@ -34,17 +34,17 @@ Task 1 - Postmanのコレクションと環境変数をインポートする
 
    |image88|
 
-#. Postman Collectionsのサイドバーに「F5 Automation & Orchestration Intro」という名前のコレクションが表示されます。
+#. Postman Collectionsのサイドバーに[F5 Automation & Orchestration Intro]という名前のコレクションが表示されます。
 
    |image10|
 
-#. 「Import」->「Import from Link」をクリックします。次のURLを貼り付け、「Import」をクリックし、環境ファイルをインポートします。
+#. [Import]-[Import from Link]をクリックします。次のURLを貼り付け、[Import]をクリックし、環境ファイルをインポートします。
 
    .. parsed-literal:: 
 
       :raw_github_url:`/postman_collections/INTRO_Automation_Orchestration_Lab.postman_environment.json`
 
-#.　Postmanの「Environments」(環境変数)機能を使用して、複数のステップを含むプロシージャでよく使用されるグローバル変数を定義します。これらのグローバル変数は、リクエストが送信される前に置換されます。Postman画面の右上にあるプルダウンより環境を「INTRO - Automation＆Orchestration Lab」に設定します。
+#.　複数設定の手間を省くために、Postmanの[Environments]（環境変数）機能を使用します。これらのグローバル変数は、リクエストが送信される前に環境変数に設定した値に置換されます。Postman画面の右上にあるプルダウンより、環境変数を[INTRO - Automation&Orchestration Lab]に設定します。
 
    |image9|
 
@@ -53,24 +53,24 @@ Task 2 – HTTP BASIC認証
 
 このタスクでは、Postmanツールを使用してHTTP BASIC認証を使ったAPIリクエストを送信します。
 この認証方法は、HTTPプロトコルで提供されている既存のBASIC認証方法を使用してユーザー名とパスワードをエンコードします。
-このメカニズムは、``<username>:<password>``という文字列をBase 64でエンコードした値で「Authorization」という名前のHTTPヘッダを挿入します。その結果のヘッダーは次の形式になります。
+このメカニズムは、 ``<username>:<password>`` をBase 64でエンコードした値を[Authorization]という名前のHTTPヘッダーに挿入します。その実行結果後のヘッダーは次の形式になります。
 
 ``Authorization: Basic YWRtaW46YWRtaW4=``
 
-この認証方法は簡単にクラックする可能性があるため、HTTPではなくHTTPS（F5デフォルト）を使用してAPI呼び出しを実行することを推奨します。
+この認証方法は簡単にクラックされる可能性があるため、HTTPではなくHTTPS（F5デフォルト）を使用してAPI呼び出しを実行することを推奨します。
 
-このタスクを完了するには、次の手順を実行します:
+このタスクを完了するには、次の手順を実行します。
 
 
-#. 画面の左側にある「Collections」タブをクリックし、画面の左側にある「F5 Automation & Orchestration Intro」コレクションを展開し、「Lab 1.2 – API Authentication」フォルダを展開します。
+#. 画面の左側にある[Collections]タブをクリックし、画面の左側にある[F5 Automation & Orchestration Intro]コレクションを展開し、[Lab 1.2 – API Authentication]フォルダを展開します。
 
    |image10|
 
-#. 「Step 1: HTTP BASIC Authentication」をクリックします。そして、「Authorization」タブをクリックし、Typeとして「Basic Auth」を選択します。資格情報(admin/admin)を入力して、「Update　Request」ボタンをクリックします。「Headers」タブのヘッダーの数が1から2に変更されていることに注目してください。これは、Postmanが自動的にHTTPヘッダーを作成し、それを含むリクエストを更新したためです。「Headers」タブをクリックし、HTTPヘッダーを確認します。
+#. [Step 1: HTTP BASIC Authentication]をクリックします。そして、[Authorization]タブをクリックし、Typeとして[Basic Auth]を選択します。資格情報（admin/admin）を入力して、[Update Request]ボタンをクリックします。[Headers]タブのヘッダーの数が"1"から"2"に変更されていることに注目してください。これは、Postmanが自動的にHTTPヘッダーを作成し、それを含むリクエストを更新したためです。[Headers]タブをクリックし、HTTPヘッダーを確認します。
 
    |image11|
 
-#. リクエストを送信するには‘Send’ボタンをクリックします。リクエストが成功した場合は、 ``/mgmt/tm/ltm``　のOrganizing Collectionのリストが表示されます。
+#. リクエストを送信するには[Send]ボタンをクリックします。リクエストが成功した場合は、 ``/mgmt/tm/ltm`` のOrganizing Collectionのリストが表示されます。
 
 
 #. パスワードを更新し、不正なパスワードを指定してください。 リクエストを再度送信し、レスポンスを確認します。
