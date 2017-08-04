@@ -44,7 +44,7 @@ Task 1 - Postmanのコレクションと環境変数をインポートする
 
       :raw_github_url:`/postman_collections/INTRO_Automation_Orchestration_Lab.postman_environment.json`
 
-#.　複数設定の手間を省くために、Postmanの[Environments]（環境変数）機能を使用します。これらのグローバル変数は、リクエストが送信される前に環境変数に設定した値に置換されます。Postman画面の右上にあるプルダウンより、環境変数を[INTRO - Automation&Orchestration Lab]に設定します。
+#. 複数設定の手間を省くために、Postmanの[Environments]（環境変数）機能を使用します。これらのグローバル変数は、リクエストが送信される前に環境変数に設定した値に置換されます。Postman画面の右上にあるプルダウンより、環境変数を[INTRO - Automation&Orchestration Lab]に設定します。
 
    |image9|
 
