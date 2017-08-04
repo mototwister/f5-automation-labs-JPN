@@ -2,7 +2,7 @@ Welcome
 -------
 
 F5's Automation, Orchestration and Programmability Trainingへようこそ！
-このラボは、F5が提供する様々なプログラマビリティツールを活用するSuper NetOps及びDevOpsエンジニアを対象としています。F5のハンズオントレーニング環境を利用したい方は、F5までお問い合わせください。
+このラボは、F5が提供する様々なプログラマビリティツールを活用するSuper NetOps及びDevOpsエンジニアを対象としています。F5のハンズオントレーニング環境を利用されたい方は、F5までお問い合わせください。
 
 このラボで使うプログラマビリティツールは、完全なDevOps CI(Continuous Integration)/CD(Continuous Delivery) パイプラインを活用しており、
 以下のGitHubリポジトリから取得可能です。
