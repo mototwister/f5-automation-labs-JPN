@@ -5,10 +5,10 @@
 .. |labname| replace:: Lab\ |labdot|
 .. |labnameund| replace:: Lab\ |labund|
 
-Lab |labmodule|\.\ |labnum| – iControl REST APIを探る
+Lab |labmodule|\.\ |labnum| – iControl REST API
 -------------------------------------------------------------
 
-Task 1 – TMOS Web InterfaceのAPIの紹介
+Task 1 – TMOS Web InterfaceのAPIを通して、iControl REST APIを学習しよう
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 このラボでは、TMOSに組み込まれたインターフェイスを使用してAPIの動作確認を行います。
@@ -20,19 +20,19 @@ Task 1 – TMOS Web InterfaceのAPIの紹介
 
    |image1|
 
-#. URL https://10.1.1.4/mgmt/toc に移動します。(またはBIG-IP A REST TOCブックマークをクリックしてください）。URLの「/ mgmt / toc」パスは、TMOSバージョン11.6以降で使用できます。
+#. URL https://10.1.1.4/mgmt/toc に移動します。(またはBIG-IP A REST TOCブックマークをクリックしてください）。URLの「/mgmt/toc」パスは、TMOSバージョン11.6以降で使用できます。
 
-#. デフォルトのadmin/adminでインターフェイスを通じて認証を行います。
+#. デフォルトのID/Passwordのadmin/adminを使って、ログインします。
 
-#. さまざまなRESTリソースのトップレベルのリストが表示されます。 ページの上部には、検索ボックス |image2| があり、ページ上の項目を見つけるために使用できます。 検索ボックスに「net」と入力し、iControl REST Resourcesの配下にある「net」リンクをクリックします。
+#. ログインすると、利用可能なRESTリソースの一覧が表示されます。 ページの上部には検索ボックス |image2| があり、項目検索のために使用できます。 検索ボックスに「net」と入力し、表示結果のiControl REST Resourcesの配下にある「net」リンクをクリックします。
 
    |image3|
 
-#. ``/mgmt/tm/net/route-domain``　という　**Collection**　を見つけてクリックしてください。
+#. ``/mgmt/tm/net/route-domain`` という **Collection** を見つけてクリックしてください。
 
-#. ルートドメインコレクションの一部である　**Resources**　のリストが表示されます。ご覧のとおり、 ``0``　のデフォルトルートドメインがリストされています。   |image4| ボタンをクリックして新しいオブジェクトを作成することもできます。さらに、 |image5| ボタンを使用してリソースを削除したり、 |image6| ボタンを使用してリソースを編集したりすることもできます。
+#. ルートドメインコレクションの一部である **Resources** のリストが表示されます。ご覧のとおり、 ``0`` のデフォルトルートドメインがリストされます。 |image4| ボタンをクリックすると、新しいオブジェクトを作成することもできます。さらに、 |image5| ボタンを使用してリソースを削除したり、 |image6| ボタンを使用してリソースを編集したりすることもできます。
 
-#. ``0``　リソースをクリックすると、デバイス上のroute-domain 0の属性が表示されます。
+#. ``0`` リソースをクリックすると、デバイス上のroute-domain 0の属性が表示されます。
 
    |image7|
 
