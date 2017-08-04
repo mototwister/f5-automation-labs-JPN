@@ -5,7 +5,7 @@
 .. |labname| replace:: Lab\ |labdot|
 .. |labnameund| replace:: Lab\ |labund|
 
-Lab |labmodule|\.\ |labnum| – REST API認証と「example」テンプレート
+Lab |labmodule|\.\ |labnum| – REST API認証と'example'テンプレート
 ---------------------------------------------------------------------------
 
 REST APIインターフェースとやり取りする際に、理解する必要がある基本的な概念の1つがユーザーとシステム間の認証方法です。
@@ -146,7 +146,7 @@ BIG-IPとiWorkflowは、TMOSで利用可能なその他の認証の仕組みに�
 
    |image22|
 
-Task 4 – プール情報を取得する「example」テンプレート
+Task 4 – プール情報を取得する'example'テンプレート
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 REST APIの操作を簡素化するために、コレクション内リソースタイプの様々な属性を含むテンプレートをリクエストできます。このテンプレートは、必要に応じてPOST、PUT、またはPATCH要求のボディとして使用できます。
