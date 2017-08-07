@@ -64,9 +64,9 @@ Task 1 – デバイスのホスト名の設定とGUIセットアップウィザ
 
 #. 「Step 1: Get System Global-Settings」項目をクリックします。「Send」ボタンをクリックし、レスポンスボディにデバイスの現在の設定を確認します。
 
-#. 「Step 2: Set System Global-Settings」をクリックします。 この項目は、　``global-settings``　リソースに対するPATCHリクエストを使用して、その中に含まれる属性を変更します。 ``guiSetup``　と　``hostname``　属性を更新します。
+#. 「Step 2: Set System Global-Settings」をクリックします。 この項目は、 ``global-settings`` リソースに対するPATCHリクエストを使用して、その中に含まれる属性を変更します。 ``guiSetup`` と ``hostname`` 属性を更新します。
 
-   - JSONボディを確認後に、「hostname」属性を変更し、ホスト名を ``bigip-a.f5.local``　に設定してください。
+   - JSONボディを確認後に、`hostname` 属性を変更し、ホスト名を ``bigip-a.f5.local`` に設定してください。
 
    - また、同じリクエストの一部としてGUIセットアップウィザードを無効にしていることに注目してください。
 
