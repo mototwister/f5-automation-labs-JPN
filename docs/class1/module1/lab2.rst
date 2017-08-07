@@ -22,7 +22,7 @@ Task 1 - Postmanのコレクションと環境変数をインポートする
 #. Windows Jumphostのタスクバーの |image8| アイコンをクリックして、Postmanツールを起動します。
 
 
-#. Postman画面の左上にある[Import]ボタンをクリックします。
+#. Postman画面の左上にある``Import``ボタンをクリックします。
 
    |image87|
 
