@@ -22,11 +22,11 @@ Task 1 - Postmanのコレクションと環境変数をインポートする
 #. Windows Jumphostのタスクバーの |image8| アイコンをクリックして、Postmanツールを起動します。
 
 
-#. Postman画面の左上にある``Import``ボタンをクリックします。
+#. Postman画面の左上にある ``Import`` ボタンをクリックします。
 
    |image87|
 
-#. [Import from Link]タブをクリックします。テキストボックスに次のURLを貼り付けて、[Import]をクリックします。
+#. [Import from Link]タブをクリックします。テキストボックスに次のURLを貼り付けて、``Import`` をクリックします。
 
    .. parsed-literal:: 
 
@@ -34,11 +34,11 @@ Task 1 - Postmanのコレクションと環境変数をインポートする
 
    |image88|
 
-#. Postman Collectionsのサイドバーに[F5 Automation & Orchestration Intro]という名前のコレクションが表示されます。
+#. Postman Collectionsのサイドバーに ``F5 Automation & Orchestration Intro`` という名前のコレクションが表示されます。
 
    |image10|
 
-#. [Import]-[Import from Link]をクリックします。次のURLを貼り付け、[Import]をクリックし、環境ファイルをインポートします。
+#. ``Import``-``Import from Link`` をクリックします。次のURLを貼り付け、``Import`` をクリックし、環境ファイルをインポートします。
 
    .. parsed-literal:: 
 
@@ -62,11 +62,11 @@ Task 2 – HTTP BASIC認証
 このタスクを完了するには、次の手順を実行します。
 
 
-#. 画面の左側にある[Collections]タブをクリックし、画面の左側にある[F5 Automation & Orchestration Intro]コレクションを展開し、[Lab 1.2 – API Authentication]フォルダを展開します。
+#. 画面の左側にある[Collections]タブをクリックし、画面の左側にある ``F5 Automation & Orchestration Intro`` コレクションを展開し、``Lab 1.2 – API Authentication`` フォルダを展開します。
 
    |image10|
 
-#. [Step 1: HTTP BASIC Authentication]をクリックします。そして、[Authorization]タブをクリックし、Typeとして[Basic Auth]を選択します。資格情報（admin/admin）を入力して、[Update Request]ボタンをクリックします。[Headers]タブのヘッダーの数が"1"から"2"に変更されていることに注目してください。これは、Postmanが自動的にHTTPヘッダーを作成し、それを含むリクエストを更新したためです。[Headers]タブをクリックし、HTTPヘッダーを確認します。
+#. ``Step 1: HTTP BASIC Authentication`` をクリックします。そして、``Authorization`` タブをクリックし、Typeとして ``Basic Auth`` を選択します。資格情報 ``admin/admin`` を入力して、``Update Request`` ボタンをクリックします。``Headers`` タブのヘッダーの数が**1**から**2**に変更されていることに注目してください。これは、Postmanが自動的にHTTPヘッダーを作成し、それを含むリクエストを更新したためです。``Headers`` タブをクリックし、HTTPヘッダーを確認します。
 
    |image11|
 
@@ -91,18 +91,18 @@ BIG-IPとiWorkflowは、TMOSで利用可能なその他の認証の仕組みに�
 
 このタスクを完了するには、次の手順を実行します:
 
-#. [Lab 1.2 Postman Collection]の[Step 2: Get Authentication Token]の項目をクリックします。
+#. ``Lab 1.2 Postman Collection`` の ``Step 2: Get Authentication Token`` の項目をクリックします。
 
 
 #. ``/mgmt/shared/authn/login`` エンドポイントにPOSTリクエストを送信されたことを確認してください。
 
    |image13|
 
-#. [Body]タブをクリックし、JSONにてユーザ名、パスワード、ログインプロバイダ名を確認します。
+#. ``Body`` タブをクリックし、JSONにてユーザ名、パスワード、ログインプロバイダ名を確認します。
 
    |image14|
 
-#. JSONファイルに資格情報(admin/admin)を追加します。 次に、[Send]ボタンをクリックします。
+#. JSONファイルに資格情報 ``admin/admin`` を追加します。 次に、``Send`` ボタンをクリックします。
 
 
 #. レスポンスステータスコードを確認します。 認証が成功し、トークンが生成された場合、応答は200 OKステータスコードを返します。
@@ -116,33 +116,33 @@ BIG-IPとiWorkflowは、TMOSで利用可能なその他の認証の仕組みに�
 
    - |image16|
 
-#. 200 OKのステータスコードを受け取ったら、レスポンスボディをチェックして、特定のトークンに割り当てられたパラメータを示すさまざまな属性を確認します。[token]属性を見つけてクリップボードにコピーして(Ctrl+c)、次のステップで使用します。
+#. 200 OKのステータスコードを受け取ったら、レスポンスボディをチェックして、特定のトークンに割り当てられたパラメータを示すさまざまな属性を確認します。[token]属性を見つけてクリップボードにコピーして ``Ctrl+c``、次のステップで使用します。
 
    |image17|
 
-#. [Lab 1.2 Postman Collection]の[Step 3: Verify Authentication　Works]の項目をクリックします。[Headers]タブをクリックし、``X-F5-Auth-Token`` ヘッダーのVALUEとしてトークン値を貼り付けます。トークンベースの認証を使用する場合、このヘッダーはすべての要求で送信する必要があります。
+#. ``Lab 1.2 Postman Collection`` の ``Step 3: Verify Authentication　Works`` の項目をクリックします。``Headers`` タブをクリックし、``X-F5-Auth-Token`` ヘッダーのVALUEとしてトークン値を貼り付けます。トークンベースの認証を使用する場合、このヘッダーはすべての要求で送信する必要があります。
 
    |image18|
 
-#. [Send]ボタンをクリックします。 リクエストが成功すると、[200 OK]ステータスと ``ltm`` Organizing Collectionのリストが表示されます。
+#. ``Send`` ボタンをクリックします。 リクエストが成功すると、``200 OK`` ステータスと ``ltm`` Organizing Collectionのリストが表示されます。
 
 
-#. ここでは、残りのラボでこの認証トークンを使用できるように、Postmanの環境変数を更新します。Postman画面の右上にある[Environment]メニューをクリックし、[Manage Environments]をクリックします。
+#. ここでは、残りのラボでこの認証トークンを使用できるように、Postmanの環境変数を更新します。Postman画面の右上にある ``Environment`` メニューをクリックし、``Manage Environments`` をクリックします。
 
    |image19|
 
-#. [INTRO – Automation & Orchestration Lab]の項目をクリックしてください。
+#. ``INTRO – Automation & Orchestration Lab`` の項目をクリックしてください。
 
    |image20|
 
-#. Value欄に認証トークンを貼り付けて（Ctrl-v）、 ``bigip_a_auth_token`` の値を更新します。
+#. Value欄に認証トークンを貼り付けて ``Ctrl-v``、 ``bigip_a_auth_token`` の値を更新します。
 
    |image21|
 
-#. [Update]ボタンをクリックし、[Manage Environments]ウィンドウを閉じます。これで、後続のリクエストに自動的にトークンが追加されるようになりました。
+#. ``Update`` ボタンをクリックし、``Manage Environments`` ウィンドウを閉じます。これで、後続のリクエストに自動的にトークンが追加されるようになりました。
 
 
-#. [Lab 1.2 Postman Collection]の[Step 4: Set Authentication Token Timeout]をクリックします。このリクエストにより、PATCH要求が送信され、トークンリソースのタイムアウト属性が更新され（URIをチェック）、ラボを簡単に完了することができます。リクエストのタイプとJSONボディを確認し、[Send]ボタンをクリックします。 応答でタイムアウトが"36000"に変更されていることを確認します。
+#. ``Lab 1.2 Postman Collection`` の ``Step 4: Set Authentication Token Timeout`` をクリックします。このリクエストにより、PATCH要求が送信され、トークンリソースのタイムアウト属性が更新され（URIをチェック）、ラボを簡単に完了することができます。リクエストのタイプとJSONボディを確認し、[Send]ボタンをクリックします。 応答でタイムアウトが"36000"に変更されていることを確認します。
 
    |image22|
 
@@ -153,13 +153,13 @@ REST APIの操作を簡素化するために、コレクション内リソース
 
 このタスクを完了するには、次の手順を実行します:
 
-#. [Lab 1.2 Postman collection]の[Step 5: Get ‘example’ of a Pool Resource]の項目をクリックします。
+#. ``Lab 1.2 Postman collection`` の ``Step 5: Get ‘example’ of a Pool Resource`` の項目をクリックします。
 
 #. URIを確認します。コレクション名の末尾に'example'の内容が追加されていることに注目してください。
 
    |image23|
 
-#. [Send]をクリックし、FULLレスポンスを確認します。 descriptionとプールリソースタイプのすべての属性が表示されます。 該当する場合は、属性のデフォルト値も表示されます。
+#. ``Send`` をクリックし、FULLレスポンスを確認します。 descriptionとプールリソースタイプのすべての属性が表示されます。 該当する場合は、属性のデフォルト値も表示されます。
 
    |image24|
 
