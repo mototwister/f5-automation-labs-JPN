@@ -20,7 +20,7 @@ Task 1 – TMOS Web InterfaceのAPIを通して、iControl REST APIを学習し�
 
    |image1|
 
-#. URL https://10.1.1.4/mgmt/toc に移動します。(またはブックマーク上の``BIG-IP A REST TOC``をクリックしてください。）URLの ``/mgmt/toc`` パスは、TMOSバージョン11.6以降で使用できます。
+#. URL https://10.1.1.4/mgmt/toc に移動します。(またはブックマーク上の ``BIG-IP A REST TOC`` をクリックしてください。）URLの ``/mgmt/toc`` パスは、TMOSバージョン11.6以降で使用できます。
 
 #. デフォルトのID/Passwordのadmin/adminを使って、ログインします。
 
