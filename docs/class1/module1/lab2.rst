@@ -44,7 +44,7 @@ Task 1 - Postmanのコレクションと環境変数をインポートする
 
       :raw_github_url:`/postman_collections/INTRO_Automation_Orchestration_Lab.postman_environment.json`
 
-#. 複数設定の手間を省くために、Postmanの[Environments]（環境変数）機能を使用します。本機能には、グローバル変数を設定可能で、リクエストが送信される前に環境変数に設定した値に置換されます。Postman画面の右上にあるプルダウンより、環境変数を[INTRO - Automation&Orchestration Lab]に設定します。
+#. 複数設定の手間を省くために、Postmanの[Environments]（環境変数）機能を使用します。本機能には、グローバル変数を設定可能で、リクエストが送信される前に環境変数に設定した値に置換されます。Postman画面の右上にあるプルダウンより、環境変数を ``INTRO - Automation&Orchestration Lab`` に設定します。
 
    |image9|
 
@@ -53,7 +53,7 @@ Task 2 – HTTP BASIC認証
 
 このタスクでは、Postmanツールを使用してHTTP BASIC認証を使ったAPIリクエストを送信します。
 この認証方法は、HTTPプロトコルで提供されている既存のBASIC認証方法を使用してユーザー名とパスワードをエンコードします。
-このメカニズムは、 ``<username>:<password>`` をBase 64でエンコードした値を[Authorization]という名前のHTTPヘッダーに挿入します。その実行結果後のヘッダーは次の形式になります。
+このメカニズムは、 ``<username>:<password>`` をBase 64でエンコードした値を ``Authorization`` という名前のHTTPヘッダーに挿入します。その実行結果後のヘッダーは次の形式になります。
 
 ``Authorization: Basic YWRtaW46YWRtaW4=``
 
@@ -62,11 +62,11 @@ Task 2 – HTTP BASIC認証
 このタスクを完了するには、次の手順を実行します。
 
 
-#. 画面の左側にある[Collections]タブをクリックし、画面の左側にある ``F5 Automation & Orchestration Intro`` コレクションを展開し、``Lab 1.2 – API Authentication`` フォルダを展開します。
+#. 画面の左側にある ``Collections`` タブをクリックし、画面の左側にある ``F5 Automation & Orchestration Intro`` コレクションを展開し、``Lab 1.2 – API Authentication`` フォルダを展開します。
 
    |image10|
 
-#. ``Step 1: HTTP BASIC Authentication`` をクリックします。そして、``Authorization`` タブをクリックし、Typeとして ``Basic Auth`` を選択します。資格情報 ``admin/admin`` を入力して、``Update Request`` ボタンをクリックします。``Headers`` タブのヘッダーの数が**1**から**2**に変更されていることに注目してください。これは、Postmanが自動的にHTTPヘッダーを作成し、それを含むリクエストを更新したためです。``Headers`` タブをクリックし、HTTPヘッダーを確認します。
+#. ``Step 1: HTTP BASIC Authentication`` をクリックします。そして、``Authorization`` タブをクリックし、Typeとして ``Basic Auth`` を選択します。資格情報 ``admin/admin`` を入力して、``Update Request`` ボタンをクリックします。``Headers`` タブのヘッダーの数が **1** から **2** に変更されていることに注目してください。これは、Postmanが自動的にHTTPヘッダーを作成し、それを含むリクエストを更新したためです。``Headers`` タブをクリックし、HTTPヘッダーを確認します。
 
    |image11|
 
