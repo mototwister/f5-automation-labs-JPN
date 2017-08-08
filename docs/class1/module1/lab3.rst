@@ -12,41 +12,41 @@ Lab |labmodule|\.\ |labnum| – デバイス設定の確認／設定
 
 -  デバイス設定
 
-   -  NTP/DNS設定（★）
+   -  NTP/DNS設定
 
-   -  リモート認証
+   -  リモート認証（※）
 
-   -  ホスト名（★）
+   -  ホスト名
 
-   -  Admin資格情報（★）
+   -  Admin資格情報
 
 -  L1-3 ネットワーク
 
    -  物理インターフェースの設定
 
-   -  L2接続(VLAN（★）, VXLAN, 等)
+   -  L2接続(VLAN、 VXLAN（※） 等)
 
-   -  L3接続(Self IPs（★）, Routing（★）, 等)
+   -  L3接続(Self IPs、 Routing 等)
 
 -  HA設定
 
-   -  Global設定（★）
+   -  Global設定
 
-      -  Config Sync IP（★）
+      -  Config Sync IP
 
-      -  Mirroring IP（★）
+      -  Mirroring IP
 
-      -  Failover Addresses（★）
+      -  Failover Addresses
 
-   -  CMI Device Trusts（★）
+   -  CMI Device Trusts
 
-   -  Device Groups（★）
+   -  Device Groups
 
-   -  Traffic Groups（★）
+   -  Traffic Groups
 
-   -  Floating Self IPs（★）
+   -  Floating Self IPs
 
-本ラボでは、上記リストの（★）項目を設定します。 
+本ラボでは、上記リストの（※）以外項目を設定します。 
 
 
 Task 1 – デバイスのホスト名の設定とGUIセットアップウィザードの無効化
@@ -143,7 +143,7 @@ rootアカウントのパスワードを更新するには、 ``/mgmt/shared/aut
 
 #. PuTTYを使用してBIG-IP-AへのSSHセッションを開くか、もしくはChromeブラウザタブでTMUIにログインし、パスワードが変更されたことを確認できます。
 
-#. **上記の手順を繰り返し、パスワードを ``admin`` に戻します。**
+#. 上記の手順を繰り返し、パスワードを ``admin`` に戻します。
 
 .. |image25| image:: /_static/image025.png
    :scale: 40%
