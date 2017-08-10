@@ -29,14 +29,13 @@ Lab |labmodule|\.\ |labnum| – BIG-IPクラスタの構築
 
 #.  再度、Device Groupの冗長化の状態を確認
 
-#.  HA Orderフェールオーバーを使用するようにトラフィックグループを変更
-　　　　（必須ではありませんが、例として示されています）
+#.  HA Orderフェールオーバーを使用するようにトラフィックグループを変更（必須ではありませんが、例として示されています）
 
 #. 　Floating Self IPを作成
 
-   (*1) 命令型モデル：クエリ結果を解釈して、オペレーションを判断 （例）Chef、Ansibleなど
-   (*2) 宣言型モデル：設定したいものを事前に定義 （例）Puppet、HEATなど
-   (*3) CMI (Centralized Management Infrastructure)：BIG-IPクラスタ
+   (※1) 命令型モデル：クエリ結果を解釈して、オペレーションを判断 （例）Chef、Ansibleなど
+   (※2) 宣言型モデル：設定したいものを事前に定義 （例）Puppet、HEATなど
+   (※3) CMI (Centralized Management Infrastructure)：BIG-IPクラスタ
 
 Task 1 – オブジェクト名の変更とCMIグローバルパラメータの設定
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
