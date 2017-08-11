@@ -77,27 +77,24 @@ CMIサブシステムは、BIG-IPシステム間の信頼関係を確立する�
 
 #. Collection内の ``Step 4: Add BIGIP-B Device to CMI Trust on BIGIP-A`` の項目をクリックします。
 
-#. 操作(PATCH)、URI、およびJSONボディを確認します。特別なRESTワーカーを使用し、デバイスをCMI trustに追加します。さらに、このステップが正常に完了するように、JSONボディを非常に特殊な方法で指定する必要があります。エラーの可能性を最小限に抑えるため、値はすでに指定されています。 ただし、この手順を十分に確認して理解してから、続行することを推奨します。
+#. 操作(PATCH)、URI、およびJSONボディを確認します。特別なRESTワーカーを使用し、デバイスをCMI trustに追加します。さらに、このステップが正常に完了するように、JSONボディを非常に特殊な方法で指定する必要がありますが、エラーの可能性を最小限に抑えるため、値はすでに設定されています。 ただし、この手順を十分に確認して理解してから、続行することを推奨します。
 
-#. ``Send`` ボタンをクリックします。この要求に対する応答は成功を示すものではなく、コマンドが実行中であることのみを示します。
+#. ``Send`` ボタンをクリックします。この要求に対する応答は成功を示すものではなく、コマンドが実行中であることのみを確認します。
 
-#. 成功しているか否かを確認するには、``device\_trust\_group`` という名前の同期グループのステータスをチェックする必要があります。これを行うには、コレクションの ``Step 5: Check　Sync Group Status`` をクリックします。この要求は、システム上のすべてのsync groupの同期ステータスを取得します。
+#. 成功しているか否かを確認するには、``device\_trust\_group`` という名前のSync Groupのステータスをチェックする必要があります。これを行うには、コレクションの ``Step 5: Check　Sync Group Status`` をクリックします。この要求は、システム上のすべてのSync Groupの同期ステータスを取得します。
 
-#. ``Send`` ボタンをクリックし、応答を確認します。同期ステータスが ``green`` になると、bigip-b.f5.localが接続され、``In Sync`` であることを意味します。(何らかの問題があった場合はインストラクターにお知らせください。)
+#. ``Send`` ボタンをクリックし、表示結果を確認します。同期ステータスが ``green`` になると、bigip-b.f5.localに接続され、``In Sync`` 状態であることを意味します。(何らかの問題があった場合はインストラクターにお知らせください。)
 
    |image29|
 
 Task 3 – Sync-Failover Device Groupを作成
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-このタスクでは、2つのBIG-IPシステムを含むDevice Groupオブジェクトを作成します。
-Device Groupのタイプは ``sync-failover`` グループになりますが、
-異なる属性値を使用して同じ手順で ``sync-only`` グループを作成することもできます。
-このタスクは、上記のリストの項目5-8に該当します。
+このタスクでは、2つのBIG-IPシステムを含むDevice Groupオブジェクトを作成します。ここでは ``sync-failover`` グループを作成しますが、異なる属性値を使用して同じ手順で ``sync-only`` グループを作成することもできます。（このタスクは、下記のリストの項目5-8に該当します。）
 
-このタスクを完了するには、次の手順を実行します:
+このタスクを完了するには、次の手順を実行します。
 
-#. Collection内の ``Step 6: Create Device Group`` の項目をクリックし、リクエストタイプ、URL、とJSONボディを確認します。``/mgmt/tm/cm/device-group`` collectionにPOSTし、両方のBIG-IPデバイスを含むDeviceGroup1という新しいリソース（ ``sync-failover`` 用）を作成します。また、デバイスグループを ``autosync`` に設定すると、構成が変更されたときに手動で同期する必要はありません。
+#. Collection内の ``Step 6: Create Device Group`` の項目をクリックし、リクエストタイプ、URL、とJSONボディを確認します。``/mgmt/tm/cm/device-group`` collectionにPOSTし、両方のBIG-IPデバイスを含むDeviceGroup1という新しいリソース（ ``sync-failover`` 用）を作成します。尚、デバイスグループを ``autosync`` に設定すると、構成が変更されたときに手動で同期する必要はありません。
 
    |image30|
 
@@ -107,22 +104,20 @@ Device Groupのタイプは ``sync-failover`` グループになりますが、
 
    |image31|
 
-#. DeviceGroup1を手動で同期し、必要な初期同期(Initial Sync)を開始します。Collection内の ``Step 8: Manually Sync　DeviceGroup1`` の項目をクリックし、リクエストタイプ、URL、とJSONボディを確認します。``/mgmt/tm/cm/config-sync`` ワーカーにPOSTリクエストを送信し、BIG-IP-AからのDeviceGroup1へのconfig-sync( ``to-group`` )を実行するように指示します。
+#. DeviceGroup1を手動で同期し、必要な初期同期(Initial Sync)を開始します。Collection内の ``Step 8: Manually Sync　DeviceGroup1`` の項目をクリックし、リクエストタイプ、URL、JSONボディを確認します。``/mgmt/tm/cm/config-sync`` ワーカーにPOSTリクエストを送信し、BIG-IP-AからのDeviceGroup1へのconfig-sync( ``to-group`` )を実行するように指示します。
 
    |image32|
 
 #. ``Send`` ボタンをクリックし、同期を開始します。
 
-#. Collection内の ``Step 9: Check Sync Group Status`` の項目をクリックし、``Send`` ボタンをクリックします。応答を確認し、DeviceGroup1の状態が ``In　Sync`` になっていることを確認します。
-   
-   ※同期操作が完了するまでに時間がかかることがあるため、``Send`` を何度かクリックすることがあります。
+#. Collection内の ``Step 9: Check Sync Group Status`` の項目をクリックし、``Send`` ボタンをクリックします。応答を確認し、DeviceGroup1の状態が ``In　Sync`` になっていることを確認します。同期が完了するまでに時間がかかることがあるため、必要に応じて ``Send`` を何度かクリックして状態を確認して下さい。
 
 
 Task 4 – 追加の操作を実行
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-残りの手順では、HA設定に関連するさまざまな共通項目を操作する方法を示します。
-このタスクでは、トラフィックグループを変更し、``HA Order`` フェールオーバー方式を使用します。 その後、フェールオーバーを開始し、トラフィックグループのステータスを確認する方法を示します。
+ここでは、HA設定に関連するさまざまな共通項目を操作する方法を示します。
+このタスクでは、**HA Order** フェールオーバー方式を使用するために、トラフィックグループを変更します。 その後、フェールオーバーを開始し、トラフィックグループのステータスを確認します。
 
 このタスクを完了するには、次の手順を実行します:
 
@@ -145,11 +140,11 @@ Task 4 – 追加の操作を実行
 Task 5 – Floating Self IPの作成
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-HA設定を完了するために、Internal VLANでFloating Self IPを作成します。
+HA設定を完了するために、Internal VLAN上にFloating Self IPを作成します。
 
-このタスクを完了するには、次の手順を実行します:
+このタスクを完了するには、次の手順を実行します。
 
-#. Collection内の ``Step 15: Create a Floating Self IP`` の項目をクリックし、リクエストタイプ、URL、とJSONボディを確認します。　``/mgmt/tm/net/self``　のCollectionに　``Self-Internal-Floating`` というリソースをIPアドレス10.1.10.3で作成します。
+#. Collection内の ``Step 15: Create a Floating Self IP`` の項目をクリックし、リクエストタイプ、URL、とJSONボディを確認します。　``/mgmt/tm/net/self`` のCollectionに ``Self-Internal-Floating`` というリソースをIPアドレス10.1.10.3で作成します。
 
 #. ``Send`` ボタンをクリックし、応答を確認します。
 
