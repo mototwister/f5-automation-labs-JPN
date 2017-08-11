@@ -8,8 +8,8 @@
 Lab |labmodule|\.\ |labnum| – REST API認証と'example'テンプレート
 ---------------------------------------------------------------------------
 
-REST APIインターフェースとやり取りする際に、理解する必要がある基本的な概念の1つがユーザーとシステム間の認証方法です。
-BIG-IPとiWorkflowは、HTTP BASICとToken basedの２種類の認証をサポートしています。ユースケースによっては、APIのユーザーは両方の認証を使用することが多いため、これらの認証メカニズムの両方を理解することが重要です。
+REST APIインターフェースを利用する際に、理解する必要がある基本的な概念の1つがユーザーとシステム間の認証方法です。
+BIG-IPとiWorkflowは、HTTP BASICとToken basedの２種類の認証をサポートしています。ユースケースによっては、APIのユーザーは両方の認証を使用することが多いため、両方の認証メカニズムを理解することが重要です。
 このラボでは、これらの認証方法について学習します。
 
 Task 1 - Postmanのコレクションと環境変数をインポートする
@@ -44,7 +44,7 @@ Task 1 - Postmanのコレクションと環境変数をインポートする
 
       :raw_github_url:`/postman_collections/INTRO_Automation_Orchestration_Lab.postman_environment.json`
 
-#. 複数設定の手間を省くために、Postmanの[Environments]（環境変数）機能を使用します。本機能には、グローバル変数を設定可能で、リクエストが送信される前に環境変数に設定した値に置換されます。Postman画面の右上にあるプルダウンより、環境変数を ``INTRO - Automation&Orchestration Lab`` に設定します。
+#. 複数設定の手間を省くために、Postmanの ``Environments`` （環境変数）機能を使用します。本機能には、グローバル変数を設定可能で、リクエストが送信される前に環境変数に設定した値に置換されます。Postman画面の右上にあるプルダウンより、環境変数を ``INTRO - Automation&Orchestration Lab`` に設定します。
 
    |image9|
 
