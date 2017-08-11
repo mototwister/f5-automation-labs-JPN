@@ -16,7 +16,7 @@ Task 1 – TMOS Web InterfaceのAPIを通して、iControl REST APIを学習し�
 これらのAPIインターフェイスはCreate、Read、Update、Delete（CRUD）機能を実装していますが、ほとんどの実用的な使用例では、
 オブジェクト作成はTMUIまたはTMSHで行って、APIインターフェイスを「読み取り」ツールとして使用する方がはるかに簡単です。　
 
-#. Google Chromeを開き、３つのブックマーク（`` **BIG-IP A GUI** ``、``BIG-IP B GUI``、``iWorkflow GUI``）をクリックします。表示される証明書の警告をスキップし、各ブックマークのログイン画面が表示されることを確認します。
+#. Google Chromeを開き、３つのブックマーク（``BIG-IP A GUI``、``BIG-IP B GUI``、``iWorkflow GUI``）をクリックします。表示される証明書の警告をスキップし、各ブックマークのログイン画面が表示されることを確認します。
 
    |image1|
 
