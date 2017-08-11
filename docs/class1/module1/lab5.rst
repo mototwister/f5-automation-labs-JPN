@@ -33,7 +33,10 @@ Lab |labmodule|\.\ |labnum| – BIG-IPクラスタの構築
 
 #.  Floating Self IPを作成
 
-####(★1) 命令型モデル：クエリ結果を解釈して、オペレーションを判断 （例）Chef、Ansibleなど   
+#test
+##test2
+
+(★1) 命令型モデル：クエリ結果を解釈して、オペレーションを判断 （例）Chef、Ansibleなど   
 + (★2) 宣言型モデル：設定したいものを事前に定義 （例）Puppet、HEATなど   
 + (★3) CMI (Centralized Management Infrastructure)：BIG-IPクラスタ     
 
