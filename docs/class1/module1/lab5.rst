@@ -13,7 +13,7 @@ Lab |labmodule|\.\ |labnum| – BIG-IPクラスタの構築
 
 クラスタを作成するために大まかな手順は次のとおりです。
 
-#.  **CMI** の ``Self`` デバイス名をデバイスのホスト名と一致するように変更
+#.  **CMI** (Centralized Management Infrastructure)の ``Self`` デバイス名をデバイスのホスト名と一致するように変更
 
 #.  BIGIP-A及びBIGIP-Bの各CMIパラメータを設定（Config Sync IP、フェールオーバーIP、ミラーリングIP）
 
@@ -33,9 +33,6 @@ Lab |labmodule|\.\ |labnum| – BIG-IPクラスタの構築
 
 #.  Floating Self IPを作成
 
- - 命令型モデル：クエリ結果を解釈して、オペレーションを判断 （例）Chef、Ansibleなど   
- - 宣言型モデル：設定したいものを事前に定義 （例）Puppet、HEATなど   
- - CMI (Centralized Management Infrastructure)：BIG-IPクラスタ     
 
 Task 1 – オブジェクト名の変更とCMIグローバルパラメータの設定
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
