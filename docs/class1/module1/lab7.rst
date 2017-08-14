@@ -51,8 +51,7 @@ Task 2 – トランザクションの変更
 
    |image76|
 
-#. Collection内の ``Step 9: Change Eval Order 4 ->1`` 項目をクリックし、リクエストタイプ、URI、とJSONボディを確認します。
-トランザクションリソースにPATCHリクエストを送信後に、``evalOrder`` 属性の値を4から1に変更し、トランザクションキューの最初の位置に移動します。
+#. Collection内の ``Step 9: Change Eval Order 4 ->1`` 項目をクリックし、リクエストタイプ、URI、とJSONボディを確認します。トランザクションリソースにPATCHリクエストを送信後に、``evalOrder`` 属性の値を4から1に変更し、トランザクションキューの最初の位置に移動します。
 
    |image77|
 
