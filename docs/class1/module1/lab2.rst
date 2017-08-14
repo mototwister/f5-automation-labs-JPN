@@ -26,7 +26,7 @@ Task 1 - Postmanのコレクションと環境変数をインポートする
 
    |image87|
 
-#. ``Import from Link`` タブをクリックします。テキストボックスに次のURLを貼り付けて、``Import`` をクリックします。
+#. ``Import from Link`` タブをクリックします。テキストボックスに以下のURLを貼り付けて、``Import`` をクリックします。
 
    .. parsed-literal:: 
 
@@ -38,7 +38,7 @@ Task 1 - Postmanのコレクションと環境変数をインポートする
 
    |image10|
 
-#. ``Import``-``Import from Link`` をクリックします。次のURLを貼り付け、``Import`` をクリックし、環境ファイルをインポートします。
+#. ``Import``-``Import from Link`` をクリックします。以下のURLを貼り付け、``Import`` をクリックし、環境ファイルをインポートします。
 
    .. parsed-literal:: 
 
