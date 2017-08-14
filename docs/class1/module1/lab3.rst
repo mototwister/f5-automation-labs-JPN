@@ -84,7 +84,7 @@ Task 2 – DNS/NTP設定の変更
 
    ``myStringArray: [ "string0", "string1" ... "stringX" ]``
 
-前述のタスクと同様に、``sys`` のOrganizing　Collectionの正しいリソースにPATCH要求を送信することで、システムDNSとNTP設定を更新できます。 このタスクの関連リソースは次のとおりです。
+前述のタスクと同様に、``sys`` のOrganizing Collectionの正しいリソースにPATCH要求を送信することで、システムDNSとNTP設定を更新できます。 このタスクの関連リソースは次のとおりです。
 
 +------------------------+----------------+
 | URL                    | Type           |
