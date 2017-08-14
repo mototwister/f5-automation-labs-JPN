@@ -135,7 +135,7 @@ BIG-IPとiWorkflowは、TMOSで利用可能なその他の認証の仕組みに�
 
    |image20|
 
-#. Value欄に認証トークンを貼り付けて ``Ctrl-v``、 ``bigip_a_auth_token`` の値を更新します。
+#. Value欄に認証トークンを貼り付けて（ ``Ctrl-v`` ）、 ``bigip_a_auth_token`` の値を更新します。
 
    |image21|
 
