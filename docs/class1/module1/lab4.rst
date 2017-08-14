@@ -14,9 +14,9 @@ Lab |labmodule|\.\ |labnum| – 基本ネットワーク接続
 
    -  物理インターフェイスの設定
 
-   -  L2接続 （VLAN (※)、VXLAN など）
+   -  L2接続 （VLAN（※）、VXLAN など）
 
-   -  L3接続 （Self IPs (※)、 Routing (※)など）
+   -  L3接続 （Self IPs（※）、 Routing（※）など）
 
 以下のラボでは、（※）の項目を設定します。 
 
