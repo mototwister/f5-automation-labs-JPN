@@ -24,9 +24,9 @@ Lab |labmodule|\.\ |labnum| – デバイス設定の確認／設定
 
    -  物理インターフェースの設定
 
-   -  L2接続(VLAN、 VXLAN（※） 等)
+   -  L2接続(VLAN、 VXLAN（※） 等）
 
-   -  L3接続(Self IPs、 Routing 等)
+   -  L3接続(Self IPs、 Routing 等）
 
 -  HA設定
 
