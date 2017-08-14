@@ -107,7 +107,7 @@ Task 3 – Sync-Failover Device Groupを作成
 
 #. ``Send`` ボタンをクリックし、同期を開始します。
 
-#. Collection内の ``Step 9: Check Sync Group Status`` の項目をクリックし、``Send`` ボタンをクリックします。応答を確認し、DeviceGroup1の状態が ``In　Sync`` になっていることを確認します。同期が完了するまでに時間がかかることがあるため、必要に応じて ``Send`` を何度かクリックして状態を確認して下さい。
+#. Collection内の ``Step 9: Check Sync Group Status`` の項目をクリックし、``Send`` ボタンをクリックします。応答を確認し、DeviceGroup1の状態が ``In Sync`` になっていることを確認します。同期が完了するまでに時間がかかることがあるため、必要に応じて ``Send`` を何度かクリックして状態を確認して下さい。
 
 
 Task 4 – 追加の操作を実行
