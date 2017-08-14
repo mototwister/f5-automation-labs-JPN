@@ -13,8 +13,7 @@ Task 1 – TMOS Web InterfaceのAPIを通して、iControl REST APIを学習し�
 
 このラボでは、TMOSに組み込まれたインターフェイスを使用してAPIの動作確認を行います。
 このユーティリティは、TMOSオブジェクトがREST APIにどのようにマップされるかを理解するのに役立ちます。
-これらのAPIインターフェイスはCreate、Read、Update、Delete（CRUD）機能を実装していますが、ほとんどの実用的な使用例では、
-オブジェクト作成はTMUIまたはTMSHで行って、APIインターフェイスを「読み取り」ツールとして使用する方がはるかに簡単です。　
+これらのAPIインターフェイスはCreate、Read、Update、Delete（CRUD）機能を実装していますが、オブジェクト作成はTMUIまたはTMSHで行って、APIインターフェイスを「読み取り」ツールとして使用することが多いようです。　
 
 #. Google Chromeを開き、３つのブックマーク（``BIG-IP A GUI``、``BIG-IP B GUI``、``iWorkflow GUI``）をクリックします。表示される証明書の警告をスキップし、各ブックマークのログイン画面が表示されることを確認します。
 
