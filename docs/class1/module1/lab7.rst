@@ -22,7 +22,7 @@ Task 1 – トランザクションを作成
 
    |image35|
 
-#. ``Step 1: Create a Transaction`` の項目をクリックし、URL、とJSONボディを確認します。新しいトランザクションを作成するために、空のJSONボディを含むPOSTを/mgmt/tm/transactionワーカーに対して送信します。
+#. ``Step 1: Create a Transaction`` の項目をクリックし、URL、とJSONボディを確認します。新しいトランザクションを作成するために、空のJSONボディを含むPOSTを ``/mgmt/tm/transaction`` ワーカーに対して送信します。
 
    |image36|
 
