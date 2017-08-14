@@ -142,7 +142,7 @@ BIG-IPとiWorkflowは、TMOSで利用可能なその他の認証の仕組みに�
 #. ``Update`` ボタンをクリックし、``Manage Environments`` ウィンドウを閉じます。これで、後続のリクエストに自動的にトークンが追加されるようになりました。
 
 
-#. ``Lab 1.2 Postman Collection`` の ``Step 4: Set Authentication Token Timeout`` をクリックします。このリクエストにより、PATCH要求が送信され、トークンリソースのタイムアウト属性が更新され（URIをチェック）、ラボを簡単に完了することができます。リクエストのタイプとJSONボディを確認し、[Send]ボタンをクリックします。 応答でタイムアウトが"36000"に変更されていることを確認します。
+#. ``Lab 1.2 Postman Collection`` の ``Step 4: Set Authentication Token Timeout`` をクリックします。このリクエストにより、PATCH要求が送信され、トークンリソースのタイムアウト属性が更新され（URIをチェック）、ラボを簡単に完了することができます。リクエストのタイプとJSONボディを確認し、``Send`` ボタンをクリックします。 応答でタイムアウトが"36000"に変更されていることを確認します。
 
    |image22|
 
