@@ -46,7 +46,7 @@ CMIの ``Self`` デバイスの名前を変更するための手順は以下の�
 
 #. Collection内の ``Step 1: Rename the CMI Self Device`` 項目をクリックします。
 
-#. URIとJSONボディを確認します。既存のオブジェクトの名前を ``/mgmt/tm/cm/device`` Collectionに変更するために、tmsh ``mv`` コマンドに相当するOSTリクエストを送信します。 ``name`` 属性はオブジェクトの現在の名前（工場出荷時のデフォルト名）を指定し、``target`` 属性はオブジェクトの新しい名前を指定します。
+#. URIとJSONボディを確認します。既存のオブジェクトの名前を ``/mgmt/tm/cm/device`` Collectionに変更するために、tmsh ``mv`` コマンドに相当するPOSTリクエストを送信します。 ``name`` 属性はオブジェクトの現在の名前（工場出荷時のデフォルト名）を指定し、``target`` 属性はオブジェクトの新しい名前を指定します。
 
 #. ``Send`` ボタンをクリックし、Resource名を変更します。
 
