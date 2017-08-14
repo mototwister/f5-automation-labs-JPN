@@ -34,7 +34,7 @@ Task 1 – トランザクションを作成
 
    |image38|
 
-#. Postman Collection内の ``Step 2: Add to Transaction: Create a HTTP Monitor`` 項目をクリックします。この要求は、要求タイプ（POST）、URI、およびJSONボディに関してnon-transaction enabled requestと同じです。違いは ``X-F5-REST-Coordination-Id`` ヘッダに ``transId`` 属性の値を加えてトランザクションに追加する点です。
+#. Postman Collection内の ``Step 2: Add to Transaction: Create a HTTP Monitor`` 項目をクリックします。この要求は、non-transaction enabled requestと同じ要求タイプ（POST）、URI、およびJSONボディとなっています。違いは ``X-F5-REST-Coordination-Id`` ヘッダに ``transId`` 属性の値を加えてトランザクションに追加する点です。
 
    |image39|
 
