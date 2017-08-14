@@ -86,7 +86,7 @@ BIG-IPとiWorkflowは、TMOSで利用可能なその他の認証の仕組みに�
 
 このタスクでは、ローカル認証データベースを使用してTBAを検証しますが、外部プロバイダへの認証も完全にサポートされています。
 
-外部認証プロバイダの詳細については、https://devcentral.f5.com の「iControl REST API User Guide」の “\ **About external authentication　providers with iControl REST**\ ” をご参照ください。
+外部認証プロバイダの詳細については、https://devcentral.f5.com の「iControl REST API User Guide」の “\ **About external authentication providers with iControl REST**\ ” をご参照ください。
 
 
 このタスクを完了するには、次の手順を実行します:
