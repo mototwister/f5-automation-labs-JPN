@@ -141,7 +141,7 @@ HA設定を完了するために、Internal VLAN上にFloating Self IPを作成�
 
 このタスクを完了するには、次の手順を実行します。
 
-#. Collection内の ``Step 15: Create a Floating Self IP`` の項目をクリックし、リクエストタイプ、URL、とJSONボディを確認します。　``/mgmt/tm/net/self`` のCollectionに ``Self-Internal-Floating`` というリソースをIPアドレス10.1.10.3で作成します。
+#. Collection内の ``Step 15: Create a Floating Self IP`` の項目をクリックし、リクエストタイプ、URL、JSONボディを確認します。``/mgmt/tm/net/self`` のCollectionに ``Self-Internal-Floating`` というリソースをIPアドレス10.1.10.3で作成します。
 
 #. ``Send`` ボタンをクリックし、応答を確認します。
 
