@@ -51,7 +51,7 @@ Task 1 – VLANの作成
 
 .. NOTE:: このラボでは、Tag付きインターフェイスは使用しません。Tag付きインターフェイスを使用するには、 ``tagged`` 属性の値を ``true`` にする必要があります。
 
-VLANオブジェクト/リソースを設定するには、次の手順を実行します：
+VLANオブジェクト/リソースを設定するには、次の手順を実行します。
 
 #. Postman collection内の ``Lab 1.4 – Basic Network Connectivity`` フォルダを展開します。
 
