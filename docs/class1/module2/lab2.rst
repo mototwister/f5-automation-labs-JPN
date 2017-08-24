@@ -23,7 +23,7 @@ Task 1 – BIG-IPデバイスディスカバリを実施
 
    |image51|
 
-#. ``Send`` ボタンをクリックします。応答を確認し、No.2で準備しておいたiWorkflow GUIを監視します。
+#. ``Send`` ボタンをクリックします。レスポンスを確認し、No.2で準備しておいたiWorkflow GUIを監視します。
 
    |image52|
 
