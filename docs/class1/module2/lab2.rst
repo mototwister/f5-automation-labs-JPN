@@ -27,7 +27,7 @@ Task 1 – BIG-IPデバイスディスカバリを実施
 
    |image52|
 
-#. BIGIP-Aの ``uuid`` 属性をコピーし、``iwf\_bigip\_a\_uuid`` Postmanの環境変数に値を設定します。
+#. BIGIP-Aの ``uuid`` 属性をコピーし、``iwf_bigip_a_uuid`` Postmanの環境変数に値を設定します。
 
    |image53|
    |image54|
