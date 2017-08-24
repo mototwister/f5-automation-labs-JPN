@@ -59,7 +59,7 @@ Task 1 – トークンベースの認証
 
    |image48|
 
-#. 認証トークンに ``iwf\_auth\_token`` をを貼り付けて（Ctrl-v）、値を更新します。
+#. 認証トークンに ``iwf\_auth\_token`` を貼り付けて（Ctrl-v）、値を更新します。
 
    |image49|
 
