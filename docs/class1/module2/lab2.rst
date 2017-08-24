@@ -8,34 +8,33 @@
 Lab |labmodule|\.\ |labnum| – BIG-IPデバイスのディスカバリ
 -----------------------------------------------------
 
-iWorkflowがBIG-IPデバイスとやり取りするためには、iWorkflowでデバイスディスカバリを実施する必要があります。 デバイスディスカバリのプロセスは、BIG-IP上の既存のCMIデバイス・トラスト・インフラストラクチャを採用します。 現在のところ、BIG-IPデバイスがiWorkflowまたはBIG-IQ CMのどちらかでのみ ‘discover’ できるという制限があります。 このラボでは、ラボ環境から既存のBIG-IPデバイスディスカバリを行います。
+iWorkflowがBIG-IPデバイスと連携するためには、iWorkflowでデバイスディスカバリを実施する必要があります。デバイスディスカバリのプロセスは、BIG-IP上のCMIデバイス・トラスト・インフラストラクチャを利用します。現在のところ、BIG-IPデバイスがiWorkflowまたはBIG-IQ CMのどちらかでのみ ``discover`` できるという制限があります。このラボでは、ラボ環境のiWorkflowから既存のBIG-IPデバイスディスカバリを行います。
 
 Task 1 – BIG-IPデバイスディスカバリを実施
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-このタスクを完了するには、次の手順を実行します:
+このタスクを完了するには、次の手順を実行します。
 
-#. Postman Collection内の「Lab 2.2: Discover & License BIG-IP Devices」フォルダを展開します。
+#. Postman Collection内の ``Lab 2.2: Discover & License BIG-IP Devices`` フォルダを展開します。
 
-#. Google Chromeのウィンドウ/タブをiWorkflowデバイス（https://10.1.1.6）にアクセスし、デフォルトの資格情報（admin/admin）でログインします。この画面で、Postmanで実行されるアクションを監視できます。 まず、「Devices」ペインを表示しておきます。
+#. Google ChromeでiWorkflowデバイス（https://10.1.1.6）にアクセスし、デフォルトの資格情報（admin/admin）でログインします。この画面で、Postmanで実行されるアクションを監視できます。 まず、``Devices`` を表示しておきます。
 
-
-#. Collection内の「Step 1：Discover BIGIP-A Device」をクリックします。これにより、 ``/mgmt/shared/resolver/device-groups/cm-cloud-managed-devices/devices``  ワーカーにデバイスディスカバリのプロセスを実行するためのPOSTが実行されます。JSONボディを調べ、ディスカバリプロセスに必要なデータを確認してください。
+#. Collection内の ``Step 1：Discover BIGIP-A Device`` をクリックします。これにより、``/mgmt/shared/resolver/device-groups/cm-cloud-managed-devices/devices`` ワーカーにデバイスディスカバリのプロセスを実行するためのPOSTが実行されます。JSONボディを調べ、ディスカバリプロセスに必要なデータを確認してください。
 
    |image51|
 
-#. 「Send」ボタンをクリックします。応答を確認し、以前に開いたiWorkflow GUIを監視します。
+#. ``Send`` ボタンをクリックします。応答を確認し、No.2で準備しておいたiWorkflow GUIを監視します。
 
    |image52|
 
-#. BIGIP-Aの「uuid」属性をコピーし、「iwf\_bigip\_a\_uuid」Postmanの環境変数に値を設定します。
+#. BIGIP-Aの ``uuid`` 属性をコピーし、``iwf\_bigip\_a\_uuid`` Postmanの環境変数に値を設定します。
 
    |image53|
    |image54|
 
-#. Collection内の「Step 2: Discover BIGIP-B Device」項目をクリックします。
+#. Collection内の ``Step 2: Discover BIGIP-B Device`` 項目をクリックします。
 
-#. Collection内の「Step 3: Get Discovered Devices」項目をクリックします。DevicesのCollectionをGETし、両方のBIG-IPデバイスの「state」が「ACTIVE」となっていることを確認します。
+#. Collection内の ``Step 3: Get Discovered Devices`` 項目をクリックします。DevicesのCollectionをGETし、両方のBIG-IPデバイスの ``state`` が ``ACTIVE`` となっていることを確認します。
 
    |image55|
 
