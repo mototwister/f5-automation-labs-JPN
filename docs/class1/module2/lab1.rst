@@ -45,7 +45,7 @@ Task 1 – トークンベースの認証
 
    |image45|
 
-#. Lab 2.1のPostman Collectionの ``Step 2: Verify Authentication Works`` の項目をクリックします。``Headers`` タブをクリックし、前の手順でコピーしたトークン値を ``X-F5-Auth-Token`` ヘッダのVALUEとして貼り付けます。TBAを使用する場合、このヘッダーはすべての要求で送信する必要があります。
+#. Lab 2.1のPostman Collectionの ``Step 2: Verify Authentication Works`` をクリックします。``Headers`` タブをクリックし、前の手順でコピーしたトークン値を ``X-F5-Auth-Token`` ヘッダのVALUEとして貼り付けます。TBAを使用する場合、このヘッダーはすべての要求で送信する必要があります。
 
    |image46|
 
