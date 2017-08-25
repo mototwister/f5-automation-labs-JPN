@@ -15,7 +15,7 @@ Lab |labmodule|\.\ |labnum|\: 「f5-super-netops-container」コンテナへの�
 Task 1 – SSHでの接続
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-SSH経由でイメージに接続するには、 ``docker run``　コマンドで指定された外部用ポート番号を使用する必要があります。前のタスクでは、コンテナを起動するためのコマンドは次のとおりでした。
+SSH経由でイメージに接続するには、``docker run`` コマンドで指定された外部用ポート番号を使用する必要があります。前のタスクでは、コンテナを起動するためのコマンドは次のとおりでした。
 
 ``docker run -p 8080:80 -p 2222:22 -p 10000:8080 --rm -it -e SNOPS_GH_BRANCH=develop
 f5devcentral/f5-super-netops-container:develop-jenkins``
@@ -26,13 +26,13 @@ f5devcentral/f5-super-netops-container:develop-jenkins``
 
 .. NOTE:: F5提供のラボ環境を使用している場合は、SSHクライアントの「f5-super-netops-container SSH」項目に接続してください。
 
-ログインする際に、ユーザ名　``snops``　とパスワード　``default``　を入力してください。
+ログインする際に、ユーザ名 ``snops`` とパスワード ``default`` を入力してください。
 
 コマンド例:
 
 ``ssh -p 2222 snops@localhost``
 
-.. NOTE:: ホストのSSHキーは、コンテナが起動するたびに再生成されます。その結果、接続しようとしたときにホストキーが変更されたことを示すエラーが表示されることがあります。 このエラーは無視しても安全です。 ``〜/ .ssh / known_hosts``　からキーを削除することで解決できます。 ``〜/ .ssh / config``　に以下を追加することでローカルSSH設定を構成することもできます。
+.. NOTE:: ホストのSSHキーは、コンテナが起動するたびに再生成されます。その結果、接続しようとしたときにホストキーが変更されたことを示すエラーが表示されることがあります。 このエラーは無視しても安全です。``〜/ .ssh / known_hosts`` からキーを削除することで解決できます。``〜/ .ssh / config`` に以下を追加することでローカルSSH設定を構成することもできます。
 
    .. code::
 
@@ -100,7 +100,7 @@ f5devcentral/f5-super-netops-container:develop-jenkins``
 Task 2 – HTTPでの接続
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-HTTP経由でイメージに接続するには、 ``docker run``　コマンドで指定された外部用ポート番号を使用する必要があります。前のタスクでは、コンテナを起動するためのコマンドは次のとおりでした。
+HTTP経由でイメージに接続するには、``docker run`` コマンドで指定された外部用ポート番号を使用する必要があります。前のタスクでは、コンテナを起動するためのコマンドは次のとおりでした。
 
 ``docker run -p 8080:80 -p 2222:22 -p 10000:8080 --rm -it -e SNOPS_GH_BRANCH=develop
 f5devcentral/f5-super-netops-container:develop-jenkins``
@@ -109,7 +109,7 @@ f5devcentral/f5-super-netops-container:develop-jenkins``
 
 ``localhost:8080 -> f5-super-netops-container:80``
 
-.. NOTE:: F5提供のラボ環境を使用している場合は、Webブラウザで登録されている「Super Netops Container」お気に入りのサイトをクリックしてください。
+.. NOTE:: F5提供のラボ環境を使用している場合は、Webブラウザで登録されている ``Super Netops Container`` お気に入りのサイトをクリックしてください。
 
 HTTPで接続するには、Webブラウザを開き、次のURLを入力します。
 
