@@ -8,7 +8,7 @@
 Lab |labmodule|\.\ |labnum|\: 「f5-super-netops-container」イメージのダウンロードと起動
 --------------------------------------------------------------------------------
 
-このラボでは、「f5-super-netops-container」イメージをダウンロードして起動するための ``docker`` cliツールを使用します。
+このラボでは、``f5-super-netops-container`` イメージをダウンロードして起動するための ``docker`` cliツールを使用します。
 
 Task 1 – コンテナイメージをダウンロード
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -56,7 +56,7 @@ Task 1 – コンテナイメージをダウンロード
       Digest: sha256:27563f98bf58c9d26eb5989acaf540a9ad7fb1806e4a4c373ad28769ebe63ef4
       Status: Downloaded newer image for f5devcentral/f5-super-netops-container:develop-jenkins
 
-#.  ``docker images``　を実行します。
+#.  ``docker images`` を実行します。
 
    出力例:
 
@@ -235,7 +235,7 @@ Task 3 - コンテナの取り外し/再取り付け（Detach/Attach）
       |------------|
         ^- YOUR CONTAINER ID
 
-#. ``CONTAINER ID``　カラムに、「f5devcentral/f5-super-netops-container:develop-jenkins」イメージに該当する値をコピーします。
+#. ``CONTAINER ID`` カラムに、``f5devcentral/f5-super-netops-container:develop-jenkins`` イメージに該当する値をコピーします。
 #. ``docker attach <container_id>`` を実行します。
-#. コマンドプロンプトを表示するには ``<Enter>``　を押す必要があります。
-#. ``<Ctrl+p+q>``　入力し、もう一度コンテナを取り外します。
+#. コマンドプロンプトを表示するには ``<Enter>`` を押す必要があります。
+#. ``<Ctrl+p+q>`` 入力し、もう一度コンテナを取り外します。
