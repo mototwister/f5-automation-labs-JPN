@@ -10,7 +10,7 @@ Lab |labmodule|\.\ |labnum|\: 「f5-postman-workflows」フレームワークの
 
 このラボでは、``f5-postman-workflows`` フレームワークを ``Postman REST Client`` にインストールします。
 
-Task 1 - Postman Collectionへ「f5-postman-workflows」インポート
+Task 1 - Postman Collectionへ「f5-postman-workflows」をインポート
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 このタスクでは、インストレーションヘルパー関数、サンプル、自動テストフレームワークを含むPostman Collectionをインポートします。このコレクションは、のGitHubリポジトリ ``f5-postman-workflows`` からインストールします。
