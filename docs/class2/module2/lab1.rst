@@ -49,7 +49,7 @@ Task 2 - Postmanクライアントに「f5-postman-workflows」フレームワ�
 
    |image80|
 
-#. Postman画面の右上にある ``Eye``ボタンをクリックし、入力されたグローバル変数を確認します。
+#. Postman画面の右上にある ``Eye`` ボタンをクリックし、入力されたグローバル変数を確認します。
 
    |image81|
 
