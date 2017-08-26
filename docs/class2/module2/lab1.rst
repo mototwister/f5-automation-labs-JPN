@@ -13,7 +13,7 @@ Lab |labmodule|\.\ |labnum|\: 「f5-postman-workflows」フレームワークの
 Task 1 - Postman Collectionへ「f5-postman-workflows」インポート
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-このタスクでは、インストレーションヘルパー関数、サンプル、自動テストフレームワークを含むPostman Collectionをインポートします。このコレクションは、のGitHubリポジトリ ``f5-postman-workflows`` からインストール可能です。
+このタスクでは、インストレーションヘルパー関数、サンプル、自動テストフレームワークを含むPostman Collectionをインポートします。このコレクションは、のGitHubリポジトリ ``f5-postman-workflows`` からインストールします。
 
 このタスクを完了するには、次の手順を実行します。
 
