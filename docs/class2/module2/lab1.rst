@@ -39,7 +39,7 @@ Task 2 - Postmanクライアントに「f5-postman-workflows」フレームワ�
 
 #. ``F5_Postman_Workflows`` collectionを展開します。
 #. ``Install`` フォルダを開きます。
-#. ``Check f5-postman-workflows Version`` の項目を選択し、``Send``をクリックします。
+#. ``Check f5-postman-workflows Version`` の項目を選択し、``Send`` をクリックします。
 #. **RESPONSE**　の ``Tests`` の部分を確認します。
 
    |image79|
