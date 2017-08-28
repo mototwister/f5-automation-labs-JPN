@@ -1,4 +1,4 @@
-Module 1: 「f5-super-netops-container」オートメーション用コンテナ
+Module 1: オートメーション用コンテナ「f5-super-netops-container」
 ===========================================
 
 このモジュールでは、さまざまなF5のオートメーション、オーケストレーション、「SuperNetops」、DevOpsツールを実行するために利用される **f5-super-netops** コンテナツールキットを紹介します。
