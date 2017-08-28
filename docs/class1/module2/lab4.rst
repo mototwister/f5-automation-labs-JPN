@@ -41,7 +41,7 @@ iWorkflow上のL4-L7サービスデプロイメントは、L4-L7サービステ�
 
 このタスクでは、以前にインストールしたApp Services iAppを利用するサービスカタログテンプレートを作成します。
 
-このタスクを完了するには、次の手順を実行します:
+このタスクを完了するには、次の手順を実行します。
 
 #. ``AppSvcs_iApp_Workflows`` Collection内の ``3_iWorkflow_Service_Templates_Examples`` フォルダを展開します。
 
@@ -58,7 +58,7 @@ Task 2 – テナントのL4-L7 サービス展開
 
 ※CRUDとはCreate（作成）、Read（読み取り）、Update（更新）、Delete（削除）機能をまとめた表現です。
 
-このタスクを完了するには、次の手順を実行します:
+このタスクを完了するには、次の手順を実行します。
 
 #. ChromeでiWorkflow（https://10.1.1.6）にアクセスし、Username: tenant, Password: tenantの資格情報でログインします。
 そして、``L4-L7 Services`` ペインを展開します。
