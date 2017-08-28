@@ -19,7 +19,7 @@ Task 1 – コンテナイメージをダウンロード
 
 .. NOTE:: F5提供のラボ環境を使用している場合は、SSHで ``Docker Server`` ホストに接続し、次のコマンドを実行してください。
 
-#. ``docker pull f5devcentral/f5-super-netops-container:develop-jenkins``　を実行します。
+#. ``docker pull f5devcentral/f5-super-netops-container:develop-jenkins`` を実行します。
 
    出力例:
 
