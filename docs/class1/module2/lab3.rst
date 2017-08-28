@@ -23,7 +23,7 @@ Task 1 – テナントとテナントのユーザーを作成
 
 #. Postman Collection内の ``Lab 2.3 – Create Tenant & Local Connector`` のフォルダを展開します。
 
-#. Collection内の ``Step 1: Create iWorkflow Tenant`` をクリックし ``Send`` をクリックします。この要求により、``MyTenant``というテナントが作成されます。
+#. Collection内の ``Step 1: Create iWorkflow Tenant`` をクリックし ``Send`` をクリックします。この要求により、``MyTenant`` というテナントが作成されます。
 
 #. Collection内の ``Step 2: Create Tenant User`` をクリックし ``Send`` をクリックします。
    この要求により、テナントユーザ名 **tenant** が作成されます。
