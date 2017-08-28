@@ -194,7 +194,7 @@ Task 3 - コンテナの取り外し/再取り付け（Detach/Attach）
 
 フォアグラウンドプロセス（この場合はシェル）が終了すると、コンテナが終了します。たとえば、実行中のコンテナに ``exit`` コマンドを入力した場合、シャットダウンプロセスが開始されます。これを避けるには、起動が完了したらコンテナから取り外す必要があります。 その後、SSHでコンテナに接続し、コンテナ内の操作を実行することができます。詳細手順を以下で説明します。
 
-コンテナを取り外し
+コンテナの取り外し
 ^^^^^^^^^^^^^^^^^^^^
 
 #. 起動中のTTY（仮想端末）で ``Ctrl+p+q`` を押します。
@@ -219,7 +219,7 @@ Task 3 - コンテナの取り外し/再取り付け（Detach/Attach）
       CONTAINER ID        IMAGE                                                    COMMAND                  CREATED             STATUS              PORTS                                                                                      NAMES
       4cf75944bfbc        f5devcentral/f5-super-netops-container:develop-jenkins   "/init /snopsboot/..."   2 minutes ago       Up 2 minutes        8000/tcp, 50000/tcp, 0.0.0.0:2222->22/tcp, 0.0.0.0:8080->80/tcp, 0.0.0.0:10000->8080/tcp   loving_montalcini
 
-コンテナを再取り付け
+コンテナの再取り付け
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 #. ``docker ps`` を実行します。
