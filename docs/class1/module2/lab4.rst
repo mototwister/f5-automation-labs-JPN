@@ -60,8 +60,7 @@ Task 2 – テナントのL4-L7 サービス展開
 
 このタスクを完了するには、次の手順を実行します。
 
-#. ChromeでiWorkflow（https://10.1.1.6）にアクセスし、Username: tenant, Password: tenantの資格情報でログインします。
-そして、``L4-L7 Services`` ペインを展開します。
+#. ChromeでiWorkflow（https://10.1.1.6）にアクセスし、Username: tenant, Password: tenantの資格情報でログインします。そして、``L4-L7 Services`` ペインを展開します。
 
 #. F5 Automation & Orchestration Intro Postman Collectionに戻り、Lab 2.4の ``Step 1: Create TENANT Service Deployment`` をクリックし、URLとJSONボディを確認します。そして ``MyTenant`` 配下に、``Tenant Editable`` とマークされたパラメータを持つ新しいテナントのサービス展開を作成します。この項目は、サービス展開のCreate（作成）操作の例です。
 
