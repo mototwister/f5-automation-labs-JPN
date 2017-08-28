@@ -61,6 +61,4 @@ https://docs.docker.com/engine/installation/
 このメッセージが表示された場合：*Cannot connect to the Docker daemon. Is the docker daemon running on this host?* 、ユーザー権限を確認してください。 また、Dockerコマンドを実行するときにsudoを使用してみてください。
 
 hello-worldコンテナを削除するには、``sudo docker rmi hello-world`` コマンドを実行します。
-コンテナが実行中の場合、イメージを削除することはできません。その場合、次のコマンドを発行できます（これにより、すべてのコンテナインスタンスが停止します）。
-
-   ``sudo docker stop $(docker ps -aq)``
+コンテナが実行中の場合、イメージを削除することはできません。その場合、次のコマンドを実行します。（これにより、すべてのコンテナインスタンスが停止します）。``sudo docker stop $(docker ps -aq)``
