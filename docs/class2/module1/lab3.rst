@@ -24,7 +24,7 @@ f5devcentral/f5-super-netops-container:develop-jenkins``
 
 ``localhost:2222 -> f5-super-netops-container:22``
 
-.. NOTE:: F5提供のラボ環境を使用している場合は、SSHクライアントの「f5-super-netops-container SSH」項目に接続してください。
+.. NOTE:: F5提供のラボ環境を使用している場合は、SSHクライアントの ``f5-super-netops-container SSH`` に接続してください。
 
 ログインする際に、ユーザ名 ``snops`` とパスワード ``default`` を入力してください。
 
