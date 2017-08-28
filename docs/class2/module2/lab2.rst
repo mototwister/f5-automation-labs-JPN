@@ -51,17 +51,17 @@ Task 2 - 手動でフォルダをワークフローに連結
 
 ``BIGIP_API_Authentication`` コレクションの ``1_Authenticate`` フォルダを使い、``BIGIP_Operational_Workflows`` コレクションの  ``4A_Get_BIGIP_Version`` フォルダに認証トークンを渡します。
 
-このタスクを完了するには、次の手順を実行します:
+このタスクを完了するには、次の手順を実行します。
 
 #. ``歯車アイコン`` ->  ``Manage Environments`` -> ``Add`` をクリックし、新しいPostmanの環境変数を作成します。
-#. 環境変数に ``Lab 2.2``　という名前をつけ、以下のキーと値のペアを設定します。
+#. 環境変数に ``Lab 2.2`` という名前をつけ、以下のキーと値のペアを設定します。
 
    - **bigip_mgmt**: 10.1.1.4
    - **bigip_username**: admin
    - **bigip_password**: admin
 
 #. ``Add`` ボタンをクリックし、``Manage Environments`` ウィンドウを閉じます。
-#. ``Lab 2.2``　環境変数を選択してください。
+#. ``Lab 2.2`` 環境変数を選択してください。
 
    |image83|
 
@@ -91,7 +91,7 @@ Task 2 - 手動でフォルダをワークフローに連結
 #. ``Get Software Version`` リクエストをクリックします。
 #. ``Headers`` タブをクリックします。``X-F5-Auth-Token`` ヘッダの値には、変数 ``bigip_token`` が設定されていることに注目してください。
 
-   .. NOTE:: Postmanは `{{variable_name}}`　構文を使用して変数値の置換を行います。
+   .. NOTE:: Postmanは `{{variable_name}}` 構文を使用して変数値の置換を行います。
 
    |image86|
 
@@ -103,7 +103,7 @@ Task 2 - 手動でフォルダをワークフローに連結
 - ``f5-postman-workflows`` フレームワークとコレクションテストコードは、応答データのテストを実行し、要求が正常に実行されたことを確認します。
 - 記述されているように、フレームワークは出力変数にも値を設定し、後続の要求として入力として使用することができます。
 
-次に、この基本知識を使用し、Newmanと ``f5-newman-wrapper`` を使用してさまざまなコレクションとフォルダをワークフローに組み込む方法を説明します。
+次に、この基本知識を使用し、``Newman`` と ``f5-newman-wrapper`` を使用してさまざまなコレクションとフォルダをワークフローに組み込む方法を説明します。
 
 .. |image82| image:: /_static/image082.png
    :scale: 100%
