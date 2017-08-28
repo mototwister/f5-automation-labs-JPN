@@ -13,7 +13,7 @@ Lab |labmodule|\.\ |labnum|\: 「f5-newman-wrapper」でワークフローを実
 Task 1 - 「f5-newman-wrapper」ワークフローを実行
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. :ref:`previous lab <lab1_3_1>`　で説明されているようにSSHセッションを開きます。
+#. :ref:`previous lab <lab1_3_1>` で説明されているようにSSHセッションを開きます。
 #. ``cd f5-postman-workflows/local`` を実行します。
 #. ``cp ../workflows/Wrapper_Demo_1.json .`` を実行します。
 #. ``vim`` で ``Wrapper_Demo_1.json`` ファイルを編集し、``bigip_mgmt`` 変数の値に ``10.1.1.4`` を入力してください。
