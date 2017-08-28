@@ -70,7 +70,7 @@ Task 2 – テナントのL4-L7 サービス展開
 
    |image61|
 
-#. 新しいChromeタブで、BIGIP-Aにアクセスします。 iApps -> Application Services -> Applications -> example-f5-http-lbをクリックし、BIG-IPにデプロイされた設定を確認します。
+#. 新しいChromeタブで、BIGIP-Aにアクセスします。``iApps`` -> ``Application Services`` -> ``Applications`` -> ``example-f5-http-lb`` をクリックし、BIG-IPにデプロイされた設定を確認します。
 
    |image62|
 
