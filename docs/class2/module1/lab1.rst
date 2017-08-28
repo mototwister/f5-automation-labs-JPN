@@ -15,7 +15,7 @@ f5-super-netops-containerを使用するには、まずシステムにDocker Com
 Task 1 – Docker CEをインストール
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Docker CEをインストールするには、以下のリンクをご参照ください。
+Docker CEをインストールするには、こちらのリンクをご参照ください。
 https://docs.docker.com/engine/installation/
 
 インストールが完了し、``hello-world`` テストを正常に実行したら、次のラボに進みます。
