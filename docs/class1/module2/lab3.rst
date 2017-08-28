@@ -40,7 +40,7 @@ Task 2 - ローカルコネクタを作成
 
 #. ``Send`` ボタンをクリックしてコネクタを作成します。
 
-#. Collection内の ``Step 5: Get Local Connectors`` をクリックし、``Send`` をクリックします。JSONボディで、コネクターの構成を確認します。次に、``device-group`` へのreferenceにて、コネクタがBIG-IPデバイスのHA状態を確認して下さい。コネクタの ``connectorId`` を探し、``connectorId`` を ``iwf\connector\uuid`` 変数の値として含めるようにPostmanのEnvironmentを更新します。
+#. Collection内の ``Step 5: Get Local Connectors`` をクリックし、``Send`` をクリックします。JSONボディで、コネクタの構成を確認します。次に、``device-group`` へのreferenceにて、コネクタがBIG-IPデバイスのHA状態を確認して下さい。コネクタの ``connectorId`` を探し、``connectorId`` を ``iwf\connector\uuid`` 変数の値として含めるようにPostmanのEnvironmentを更新します。
 
    |image57|
    |image58|
