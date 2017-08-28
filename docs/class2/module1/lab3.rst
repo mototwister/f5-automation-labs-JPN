@@ -131,13 +131,13 @@ f5devcentral/f5-super-netops-container:develop-jenkins``
 
 ``10.1.1.8:10000 -> f5-super-netops-container:8080``
 
-.. NOTE:: 初回アクセス後に、Webブラウザ上でJenkinsのお気に入りを登録することを推奨します。
+.. NOTE:: 初回アクセス後に、Webブラウザ上でJenkinsをお気に入り登録することを推奨します。
 
 HTTPで接続するには、Webブラウザを開き、次のURLを入力します。
 
 ``http://10.1.1.8:10000``
 
-以下のような画面が表示されます:
+以下のような画面が表示されます。
 
 |image89|
 
