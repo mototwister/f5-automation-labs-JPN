@@ -3,7 +3,7 @@ Module 2: 「f5-postman-workflows」フレームワーク & 「f5-newman-wrapper
 
 これまでのモジュールでは、さまざまなレスポンス値のチェックや環境変数の設定に非常に面倒な作業がありました。退屈であることに加えて、人間の判断をようする作業があるため自動化することはできませんでした。
 
-F5 BIG-IPプラットフォームの自動化を支援するため、Postman REST Client(http://getpostman.com)で使用できる一連のツールを開発しました。このツールの目的は以下のとおりです。
+F5 BIG-IPプラットフォームの自動化を支援するため、Postman REST Client（http://getpostman.com）で使用できる一連のツールを開発しました。これらのツールの目的は以下のとおりです。
 
 - f5-postman-workflows
 
