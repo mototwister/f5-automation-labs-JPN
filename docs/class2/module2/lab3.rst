@@ -64,7 +64,7 @@ Task 1 - ワークフロー JSONフォーマットのご紹介
       - Newmanのグローバルオプションを指定できます。設定可能なオプションは、以下のURLをご覧下さい。
         https://github.com/postmanlabs/newman#api-reference
 
-        .. NOTE:: ``reporters``配列から ``cli`` オプションを削除すると、CLIが利用できなくなるので注意してください。
+        .. NOTE:: ``reporters`` 配列から ``cli`` オプションを削除すると、CLIが利用できなくなるので注意してください。
 
     * - ``saveEnvVars``
       - ワークフロー実行時の最後に、環境変数をファイルに保存する
