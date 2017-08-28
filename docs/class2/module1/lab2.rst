@@ -5,10 +5,10 @@
 .. |labname| replace:: Lab\ |labdot|
 .. |labnameund| replace:: Lab\ |labund|
 
-Lab |labmodule|\.\ |labnum|\: 「f5-super-netops-container」イメージのダウンロードと起動
+Lab |labmodule|\.\ |labnum|\: ``f5-super-netops-container`` イメージのダウンロードと起動
 --------------------------------------------------------------------------------
 
-このラボでは、``f5-super-netops-container`` イメージをダウンロードして起動するため、 ``docker`` cliツールを使用します。
+このラボでは、 ``f5-super-netops-container`` イメージをダウンロードして起動するための ``docker`` cliツールを使用します。
 
 Task 1 – コンテナイメージをダウンロード
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -78,7 +78,7 @@ Task 2 – Start the container image
 
 ``-it`` オプションをつけることでコンテナ内で操作できます。
 
-``-e`` [変数名]=[値]オプションで、GitHubのブランチ（Master/Develop等）を指定します。 このラボでは、``develop`` を指定します。
+``-e`` オプションで、GitHubのブランチ（Master/Develop等）を指定します。 このラボでは、 ``develop``　を指定します。
 
 ``f5devcentral/f5-super-netops-container:develop-jenkins`` オプションは、前のタスクでダウンロードしたイメージの名前です。
 

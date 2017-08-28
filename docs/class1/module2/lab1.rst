@@ -15,13 +15,13 @@ Task 1 – トークンベースの認証
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 このタスクでは、ローカル認証データベースを使用してトークンベースの認証(以下、TBA)を実施しますが、外部認証プロバイダを利用した認証も利用することができます。
-外部認証プロバイダの詳細については、https://devcentral.f5.com にある ``iControl REST API User Guide`` の “\ **About external authentication providers with iControl REST**\ ” をご参照ください。
+外部認証プロバイダの詳細については、https://devcentral.f5.com の ``iControl REST API User Guide`` の “\ **About external authentication providers with iControl REST**\ ” をご参照ください。
 
 このタスクを完了するには、次の手順を実行します。
 
 #. Lab 2.1のPostman Collectionの ``Step 1: Get Authentication Token`` をクリックします。
 
-#. ``/mgmt/shared/authn/login`` エンドポイントにPOST要求を送信していることに注目してください。
+#. ``/mgmt/shared/authn/login``　エンドポイントにPOST要求を送信していることに注目してください。
 
    |image41|
 
@@ -29,7 +29,7 @@ Task 1 – トークンベースの認証
 
    |image42|
 
-#. JSONボディに必要な資格情報 ``（admin/admin）`` を追加します。次に、``Send`` ボタンをクリックします。
+#. JSONボディに必要な資格情報 ``（admin/admin）`` を追加します。次に、 ``Send`` ボタンをクリックします。
 
 #. レスポンスステータスコードを確認します。認証が成功し、トークンが生成された場合、``200 OK`` ステータスコードが返されます。 ステータスコードが ``401`` の場合、資格情報が正しく設定されているか確認してください。
 
@@ -45,7 +45,7 @@ Task 1 – トークンベースの認証
 
    |image45|
 
-#. Lab 2.1のPostman Collectionの ``Step 2: Verify Authentication Works`` をクリックします。``Headers`` タブをクリックし、前の手順でコピーしたトークン値を ``X-F5-Auth-Token`` ヘッダのVALUEとして貼り付けます。TBAを使用する場合、このヘッダーはすべての要求で送信する必要があります。
+#. Lab 2.1のPostman  ``Collections`` の ``Step 2: Verify Authentication Works`` をクリックします。``Headers`` タブをクリックし、前の手順でコピーしたトークン値を ``X-F5-Auth-Token`` ヘッダのVALUEとして貼り付けます。TBAを使用する場合、このヘッダーはすべての要求で送信する必要があります。
 
    |image46|
 

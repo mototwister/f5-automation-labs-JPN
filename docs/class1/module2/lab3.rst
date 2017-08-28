@@ -21,31 +21,31 @@ Task 1 – テナントとテナントのユーザーを作成
 
 このタスクを完了するには、次の手順を実行します。
 
-#. Postman Collection内の ``Lab 2.3 – Create Tenant & Local Connector`` のフォルダを展開します。
+#. Postman ``Collections`` 内の ``Lab 2.3 – Create Tenant & Local Connector`` のフォルダを展開します。
 
-#. Collection内の ``Step 1: Create iWorkflow Tenant`` をクリックし ``Send`` をクリックします。この要求により、``MyTenant`` というテナントが作成されます。
+#.  ``Collections`` 内の ``Step 1: Create iWorkflow Tenant`` をクリックし ``Send`` をクリックします。この要求により、 ``MyTenant`` というテナントが作成されます。
 
-#. Collection内の ``Step 2: Create Tenant User`` をクリックし ``Send`` をクリックします。
+#.  ``Collections`` 内の ``Step 2: Create Tenant User`` をクリックし ``Send`` をクリックします。
    この要求により、テナントユーザが作成されます。
 
-#. Collection内の ``Step 3: Assign User to Tenant Admin Role`` をクリックし、``Send`` をクリックします。このリクエストは ``MyTenant`` テナントのテナントユーザにAdminロールを割り当てます。
+#.  ``Collections`` 内の ``Step 3: Assign User to Tenant Admin Role`` をクリックし、``Send`` をクリックします。このリクエストは ``MyTenant`` テナントのテナントユーザにAdminロールを割り当てます。
 
 
 Task 2 - ローカルコネクタを作成
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Collection内の ``Step 4: Create a Local Connector`` をクリックします。ローカルコネクタのCollectionへのPOSTを実行して、新しいコネクタを作成します。JSONボディを確認すると、BIG-IP-AデバイスのURLへのReference（以前に入力したUUID環境変数を含む）が提供されていることがわかります。
+#.  ``Collections`` 内の ``Step 4: Create a Local Connector`` をクリックします。ローカルコネクタのCollectionへのPOSTを実行して、新しいコネクタを作成します。JSONボディを確認すると、 ``BIG-IP-A`` デバイスのURLへのReference（以前に入力したUUID環境変数を含む）が提供されていることがわかります。
 
    |image56|
 
 #. ``Send`` ボタンをクリックしてコネクタを作成します。
 
-#. Collection内の ``Step 5: Get Local Connectors`` をクリックし、``Send`` をクリックします。JSONボディで、コネクタの構成を確認します。次に、``device-group`` へのreferenceにて、コネクタがBIG-IPデバイスのHA状態を確認して下さい。コネクタの ``connectorId`` を探し、``connectorId`` を ``iwf\connector\uuid`` 変数の値として含めるようにPostmanのEnvironmentを更新します。
+#.  ``Collections`` 内の ``Step 5: Get Local Connectors`` をクリックし、 ``Send`` をクリックします。JSONボディで、コネクターの構成を確認します。次に、 ``device-group`` へのReferenceにて、コネクタがBIG-IPデバイスのHA状態を確認して下さい。コネクタの ``connectorId`` を探し、``connectorId`` を ``iwf\connector\uuid`` 変数の値として含めるようにPostmanのEnvironmentを更新します。
 
    |image57|
    |image58|
 
-#. Collection内の ``Step 6: Assign Connector to Tenant`` をクリックします。この要求は、このコネクタを ``MyTenant`` テナントに割り当て、そのテナントからのサービスディプロイメントを可能にします。``Send`` ボタンをクリックし、レスポンスを確認します。
+#.  ``Collections`` 内の ``Step 6: Assign Connector to Tenant`` をクリックします。この要求は、このコネクタを ``MyTenant`` テナントに割り当て、そのテナントからのサービスディプロイメントを可能にします。 ``Send`` ボタンをクリックし、レスポンスを確認します。
 
 .. |image56| image:: /_static/image056.png
    :scale: 40%

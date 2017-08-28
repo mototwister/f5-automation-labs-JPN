@@ -17,7 +17,7 @@ Collectionにはドキュメントが含まれており、付属のドキュメ�
 Task 1 - BIG-IP Collectionsのインポートと操作
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-前回のラボと同じ手順で2つのCollectionをPostmanにインポートします。 これらのCollectionにより、BIG-IPデバイスに対するREST API認証を実行し、BIG-IPデバイスで操作を実行することができます。
+前回のラボと同じ手順で2つの ``Collections`` をPostmanにインポートします。 これらの ``Collections`` により、BIG-IPデバイスに対するREST API認証を実行し、BIG-IPデバイスで操作を実行することができます。
 
 このタスクを完了するには、次の手順を実行します。
 
@@ -26,7 +26,7 @@ Task 1 - BIG-IP Collectionsのインポートと操作
    - ``https://raw.githubusercontent.com/0xHiteshPatel/f5-postman-workflows/master/collections/BIG_IP/BIGIP_API_Authentication.postman_collection.json``
    - ``https://raw.githubusercontent.com/0xHiteshPatel/f5-postman-workflows/master/collections/BIG_IP/BIGIP_Operational_Workflows.postman_collection.json``
 
-#. Postmanのサイドバーに2つのCollectionが追加されたことを確認します。
+#. Postmanのサイドバーに2つの ``Collections`` が追加されたことを確認します。
 
    - BIGIP_API_Authentication
    - BIGIP_Operational_Workflows
@@ -43,6 +43,7 @@ Task 1 - BIG-IP Collectionsのインポートと操作
 
 #. ``Cancel`` をクリックし、ウィンドウを閉じます。
 #. 上記の手順を繰り返し、``BIGIP_Operational_Workflows`` Collectionを確認します。特に ``4A_Get_BIGIP_Version`` フォルダを確認してください。
+
 
 Task 2 - 手動でフォルダをワークフローに連結
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -81,29 +82,29 @@ Task 2 - 手動でフォルダをワークフローに連結
 
    |image84|
 
-#. フォルダ内の ``Verify Authentication Works`` リクエストを選択し、``Send`` をクリックします。 テストを確認し、すべてが合格であることを確認する
+#. フォルダ内の ``Verify Authentication Works``　リクエストを選択し、 ``Send``　をクリックします。 テストを確認し、すべてが合格であることを確認する
 
-#. ``Set Authentication Token Timeout`` リクエストを選択し、``Send`` をクリックしてすべてのテストが合格であることを確認します。
+#. ``Set Authentication Token Timeout``　リクエストを選択し、 ``Send``　をクリックしてすべてのテストが合格であることを確認します。
 
 この時点で、デバイス認証は成功し、認証トークンは ``bigip_token`` 環境変数に格納されます。次に、``bigip_token`` 変数値を使用して、そのアクションを認証して実行する別のコレクションとフォルダでリクエストを実行します。
 
 #. ``BIGIP_Operational_Workflows`` -> ``4A_Get_BIGIP_Version`` フォルダを展開します。
 #. ``Get Software Version`` リクエストをクリックします。
-#. ``Headers`` タブをクリックします。``X-F5-Auth-Token`` ヘッダの値には、変数 ``bigip_token`` が設定されていることに注目してください。
+#. ``Headers`` タブをクリックします。 ``X-F5-Auth-Token``　ヘッダの値には、変数 ``bigip_token``　が設定されていることに注目してください。
 
    .. NOTE:: Postmanは `{{variable_name}}` 構文を使用して変数値の置換を行います。
 
    |image86|
 
-#. リクエストを送信するには、``Send`` をクリックします。 テストを確認し、すべてのテストが合格したことを確認します。
-#. 環境変数を調べて、``bigip_version`` と ``bigip_build`` 変数が設定されていることに注意してください。
+#. リクエストを送信するには、 ``Send`` をクリックします。 テストを確認し、すべてのテストが合格したことを確認します。
+#. 環境変数を調べて、 ``bigip_version``　と ``bigip_build``　変数が設定されていることに注意してください。
 
 上記の例は単純ですが、異なるコレクションやフォルダを連鎖してカスタムワークフローを組み込む方法を示しています。理解すべき重要な概念は次のとおりです。
 
 - ``f5-postman-workflows`` フレームワークとコレクションテストコードは、応答データのテストを実行し、要求が正常に実行されたことを確認します。
 - 記述されているように、フレームワークは出力変数にも値を設定し、後続の要求として入力として使用することができます。
 
-次に、この基本知識を使用し、``Newman`` と ``f5-newman-wrapper`` を使用してさまざまなコレクションとフォルダをワークフローに組み込む方法を説明します。
+次に、この基本知識を使用し、 ``Newman`` と ``f5-newman-wrapper`` を使用してさまざまなコレクションとフォルダをワークフローに組み込む方法を説明します。
 
 .. |image82| image:: /_static/image082.png
    :scale: 100%

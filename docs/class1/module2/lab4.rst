@@ -18,7 +18,7 @@ iWorkflowは、iAppテンプレートのSource of Truth（信頼できる唯一�
 
 .. NOTE:: BIG-IPデバイス上のiAppテンプレートのインストールは、 **初回** デプロイ時に行われます。
 
-App Services iAppテンプレートデプロイを支援するために、Postman Collectionが作成されています。CollectionをPostmanにインポート後に、iWorkflowにテンプレートをインストールします。
+App Services iAppテンプレートデプロイを支援するために、Postman ``Collections`` が作成されています。``Collections`` をPostmanにインポート後に、iWorkflowにテンプレートをインストールします。
 
 このタスクを完了するには、次の手順を実行します。
 
@@ -43,11 +43,11 @@ iWorkflow上のL4-L7サービスデプロイメントは、L4-L7サービステ�
 
 このタスクを完了するには、次の手順を実行します。
 
-#. ``AppSvcs_iApp_Workflows`` Collection内の ``3_iWorkflow_Service_Templates_Examples`` フォルダを展開します。
+#. ``Collections`` 内の ``AppSvcs_iApp_Workflows`` 配下の ``3_iWorkflow_Service_Templates_Examples`` フォルダを展開します。
 
-#. Collection内の ``f5-http-lb Template`` をクリックします。このリクエストはあらかじめ作成されており、App Services iAppを使った新しいサービステンプレートを作成します。``Send`` ボタンをクリックし、テンプレートを作成します。
+#. ``Collections`` 内の ``f5-http-lb Template`` をクリックします。このリクエストはあらかじめ作成されており、App Services iAppを使った新しいサービステンプレートを作成します。 ``Send`` ボタンをクリックし、テンプレートを作成します。
 
-#. ChromeでiWorkflow（https://10.1.1.6）にアクセスし、資格情報（admin/admin）でログインします。``Service Templates`` ペインを展開し、``f5-http-lb`` テンプレートをダブルクリックします。デフォルトでさまざまな値が設定されていること確認してください（例えば、``pool__port`` 変数のポート ``80`` ）。また、一部のフィールドには ``Tenant Editable`` とマークされています。
+#. ChromeでiWorkflow（https://10.1.1.6）にアクセスし、資格情報（admin/admin）でログインします。 ``Service Templates`` ペインを展開し、``f5-http-lb`` テンプレートをダブルクリックします。デフォルトでさまざまな値が設定されていること確認してください（例えば、 ``pool__port`` 変数のポート ``80`` ）。また、一部のフィールドには ``Tenant Editable`` とマークされています。
 
    |image59|
 
@@ -74,9 +74,9 @@ Task 2 – テナントのL4-L7 サービス展開
 
    |image62|
 
-#. Postmanに戻り、Collection内の ``Step 2: Get TENANT Service　Deployment`` 項目をクリックし、``Send`` をクリックします。 この項目は、サービス展開のRead（読み取り）操作の例です。 レスポンスは、iWorkflow GUIのデプロイメントプロパティの画面に表示される設定と一致することを確認します。
+#. Postmanに戻り、 ``Collections`` 内の ``Step 2: Get TENANT Service　Deployment`` 項目をクリックし、``Send`` をクリックします。 この項目は、サービス展開のRead（読み取り）操作の例です。 レスポンスは、iWorkflow GUIのデプロイメントプロパティの画面に表示される設定と一致することを確認します。
 
-#. Collection内の ``Step 3: Modify TENANT Service Deployment`` をクリックします。 この要求は、Update（更新）操作の例です。サービスデプロイメントを示すURLに対してPUTリクエストを送信していることに注目してください。JSONボディを解析し、``pool__Members`` テーブルにIPアドレス10.1.10.12の新しいプールメンバーが追加されていることを確認します。``Send`` ボタンをクリックし、サービスを再デプロイします。
+#. ``Collections`` 内の ``Step 3: Modify TENANT Service Deployment`` をクリックします。 この要求は、Update（更新）操作の例です。サービスデプロイメントを示すURLに対してPUTリクエストを送信していることに注目してください。JSONボディを解析し、``pool__Members`` テーブルにIPアドレス10.1.10.12の新しいプールメンバーが追加されていることを確認します。``Send`` ボタンをクリックし、サービスを再デプロイします。
 
    |image63|
 
