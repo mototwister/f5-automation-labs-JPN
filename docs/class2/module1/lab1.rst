@@ -56,7 +56,7 @@ https://docs.docker.com/engine/installation/
     https://docs.docker.com/engine/userguide/
 
 
-.. NOTE:: ``--rm`` オプションを使うと、コンテナは停止するとすぐに削除されます。
+.. NOTE:: ``--rm`` オプションを使うと、コンテナが停止するとすぐに削除されます。
 
 このメッセージが表示された場合： *Cannot connect to the Docker daemon. Is the docker
    daemon running on this host?* 、ユーザー特権を確認してください。 また、ドッカーコマンドを実行するときにsudoを使用してみてください。
