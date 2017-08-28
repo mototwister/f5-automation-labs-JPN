@@ -9,9 +9,11 @@ Module 1: オートメーション用コンテナツールキット「f5-super-n
 
 ``f5-super-netops-container`` をインストールするには、システムがDocker Community Edition（CE）をサポートする必要があります。
 詳細は以下のリンクをご参照ください。
+
 https://docs.docker.com/engine/installation/#platform-support-matrix
 
-このツールキットは完全にオープンソースであり、GitHubから以下のリンクから入手できます：
+このツールキットは完全にオープンソースであり、GitHubの以下のリンクから入手できます。
+
 https://github.com/f5devcentral/f5-super-netops-container
 
 .. toctree::
