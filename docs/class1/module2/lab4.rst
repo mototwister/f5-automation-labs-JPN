@@ -16,9 +16,9 @@ Task 1 - iWorkflowにApp Services iAppをインストール
 iWorkflowは、iAppテンプレートのSource of Truth（信頼できる唯一の情報源）として機能します。
 その結果、BIG-IPの展開を自動化するために使用されるiAppテンプレートは、iWorkflowにあらかじめインストールする必要があります。 テンプレートがインストールされると、iWorkflowは自動的にテンプレートをBIG-IPにインストールします。
 
-.. NOTE:: BIG-IPデバイス上のiAppテンプレートのインストールは、 **初回** 展開時に行われます。
+.. NOTE:: BIG-IPデバイス上のiAppテンプレートのインストールは、 **初回** デプロイ時に行われます。
 
-App Services iAppテンプレート展開を支援するために、Postman Collectionが作成されています。CollectionをPostmanにインポート後に、iWorkflowにテンプレートをインストールします。
+App Services iAppテンプレートデプロイを支援するために、Postman Collectionが作成されています。CollectionをPostmanにインポート後に、iWorkflowにテンプレートをインストールします。
 
 このタスクを完了するには、次の手順を実行します:
 
