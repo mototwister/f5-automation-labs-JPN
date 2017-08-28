@@ -20,7 +20,7 @@ iWorkflowは、iAppテンプレートのSource of Truth（信頼できる唯一�
 
 App Services iAppテンプレートデプロイを支援するために、Postman Collectionが作成されています。CollectionをPostmanにインポート後に、iWorkflowにテンプレートをインストールします。
 
-このタスクを完了するには、次の手順を実行します:
+このタスクを完了するには、次の手順を実行します。
 
 #. ``Import`` -> ``Import from Link`` から、以下のCollection URLをインポートします。
 
